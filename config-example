@@ -1,0 +1,15 @@
+/*Eliminar este comentario
+modificar los datos con los datos de tu base de datos
+cambiar el nombre a solo config
+mover este archivo a db/conexion
+*/
+
+{
+    "conexion": {
+        "server" : "localhost",
+        "user" : "root",
+        "password" : "",
+        "database" : "NOMBRE_BD",
+        "port" : "3306"
+    }
+}
