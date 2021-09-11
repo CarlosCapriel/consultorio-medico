@@ -1,10 +1,10 @@
 <?php 
 //ejemplo de la conexion
-    require_once "clases/conexion/Conexion.php";
+    require_once "conexion/Conexion.php";
     
     $conexion = new Conexion;
 
-    $query = "select * from name_table";
+    $query = "select * from login";
 
     print_r($conexion->obtenerDatos($query));
 ?>
