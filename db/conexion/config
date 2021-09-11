@@ -1,0 +1,9 @@
+{
+    "conexion": {
+        "server" : "us-cdbr-east-04.cleardb.com",
+        "user" : "bad4f18876fddc",
+        "password" : "80c91704",
+        "database" : "heroku_25242b417e27176",
+        "port" : "3306"
+    }
+}
