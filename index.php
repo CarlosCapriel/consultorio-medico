@@ -1,14 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/normalize.css">
-    <link rel="stylesheet" href="public/css/style.css">
-    <title>Clinical Medicals</title>
-</head>
-<body>
-    <h1>Algo extraordinario esta por venir...</h1>
-</body>
-</html>
+<?php
+    $url = !empty($_GET['url'])? $_GET['url'] : 'home/home';
+    $arrUrl = explode("/", $url);
+    $controller = $arrUrl[0];
+    $method = $arrUrl[0];
+    $params = "";
+
+    if (!empty($arrUrl[1])) // si existe algun metodo
+    {
+        if ($arrUrl[1] != "") 
+        {
+            $method = $arrUrl[1];
+        }
+    }
+    //si existen los parametros
+    if (!empty($arrUrl[2]))
+    {
+        if ($arrUrl[2] != "") {//recorrer los parametros
+            for ($i = 2; $i < count($arrUrl); $i++) {
+                $params .= $arrUrl[$i].',' ;
+            }
+            $params = trim($params, ',');
+        }
+    }
+    echo "<br>";
+    echo "controlador: " .$controller .'<br>' .  'metodo: ' . $method . '<br> '.'parametros: ' . $params; 
+?>
