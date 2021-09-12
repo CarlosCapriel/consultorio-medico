@@ -1,11 +1,12 @@
 <?php
+    require_once ('config/Config.php');
     $url = !empty($_GET['url'])? $_GET['url'] : 'home/home';
     $arrUrl = explode("/", $url);
     $controller = $arrUrl[0];
     $method = $arrUrl[0];
     $params = "";
 
-    if (!empty($arrUrl[1])) // si existe algun metodo
+    if (!empty($arrUrl[1])) // si se pasa algun metodo
     {
         if ($arrUrl[1] != "") 
         {
@@ -22,6 +23,28 @@
             $params = trim($params, ',');
         }
     }
-    echo "<br>";
-    echo "controlador: " .$controller .'<br>' .  'metodo: ' . $method . '<br> '.'parametros: ' . $params; 
+    
+    spl_autoload_register(function($class){
+        if (file_exists(LIBS.'Core/' . $class . ".php")) {
+            require_once(LIBS.'Core/' . $class .".php");
+        }
+    });
+
+   //va a el Load
+    $controllerFile = "Controllers/". $controller . ".php";
+    if (file_exists($controllerFile))
+    {
+        require_once($controllerFile);
+        
+        $controller = new $controller();
+        
+        if (method_exists($controller, $method)) {
+            //echo $params;
+            $controller -> {$method}($params);
+        } else {
+            echo "No existe el metodo";
+        }
+    } else {
+        echo "No existe el controlador";
+    } 
 ?>
