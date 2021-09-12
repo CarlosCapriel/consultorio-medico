@@ -42,9 +42,11 @@
             //echo $params;
             $controller -> {$method}($params);
         } else {
-            echo "No existe el metodo";
+            //mandando a llamar la pagina de error desde el controlador **Aqui no existe el metodo
+            require_once("Controllers/Error.php");    
         }
     } else {
-        echo "No existe el controlador";
+        //mandando a llamar la pagina de error desde el controlador **Aqui no existe el controlador
+        require_once("Controllers/Error.php");
     } 
 ?>
