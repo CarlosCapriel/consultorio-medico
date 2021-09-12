@@ -1,5 +1,6 @@
 <?php
-    //va a el Load
+    //pasar la primera letra en mayuscula
+    $controller = ucwords($controller);
     $controllerFile = "Controllers/". $controller . ".php";
     if (file_exists($controllerFile))
     {
