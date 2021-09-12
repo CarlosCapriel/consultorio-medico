@@ -12,6 +12,7 @@
             $controller -> {$method}($params);
         } else {
             //mandando a llamar la pagina de error desde el controlador **Aqui no existe el metodo
+            echo "el metodo no existe";
             require_once("Controllers/Error.php");    
         }
     } else {
