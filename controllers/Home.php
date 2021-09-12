@@ -8,6 +8,7 @@
         }
 
         public function home($params) {
+            $data['page_id'] = 1;
             $data['tag_page'] = "Home";
             $data['page_title'] = "Titulo Pagina";
             $data['page_name'] = "Page Name";
