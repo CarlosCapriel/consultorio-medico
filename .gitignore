@@ -1,1 +1,4 @@
 config
+
+# Visual Studio Code
+.vscode
