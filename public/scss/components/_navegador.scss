@@ -1,0 +1,61 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../tools/mixins.scss' as m;
+
+/* Estilos del navegador de la pagina  */
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 2rem; 
+    background-color: white;
+    height: 7rem;
+
+    .nav-main__logo{
+
+        display: inline-flex;
+        align-items: center; 
+        height: 7rem;
+        img{
+            width: 72px;
+            height: 72px;
+        }
+        h1 > a{
+
+            margin: unset;
+            padding-left: 1rem;
+            text-transform: uppercase;
+            font: {
+                family: f.$font-title ;
+                size: 36px;
+            }
+            &:hover{
+                color: c.$grey;
+                background-color: revert;
+            }
+        }
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        
+    }
+    a{
+        padding: 18px 5px 18px;
+        text-decoration: none;
+        color: c.$grey;
+        font: {
+            size: 20px;
+            family: f.$font-text;
+            weight: 600;
+        }
+        &:hover{
+            color: c.$white;
+            background-color: c.$azul;
+            @include m.transition;
+        }
+    }
+}
