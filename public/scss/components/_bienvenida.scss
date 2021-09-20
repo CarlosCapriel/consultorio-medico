@@ -1,0 +1,42 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../tools/mixins.scss' as m;
+
+/* Bienvenida */
+.header{
+    display: grid;
+    padding: 2rem;
+    background: linear-gradient(258.31deg,
+     rgba(87, 188, 144, 0.855) 3.51%, 
+     rgba(119, 201, 212, 0.855) 91.11%), 
+     url(../../img/img_header.jpg) no-repeat
+     center center fixed;
+    background-size: cover;
+    height: 580px;
+    align-content: space-evenly;
+
+    section{
+        
+        color: c.$white;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        width: 65%;
+        align-content: center;
+        row-gap: 2rem;
+        
+        h2{
+            font: {
+            size: 48px;
+            family: f.$font-title;
+             }
+        }
+        p{
+            text-align: left;
+            font: {
+                size: 20px;
+                family: f.$font-text;
+                
+            }
+        }
+    }
+ }
