@@ -18,18 +18,18 @@
 
     <!-- Incio del contenido principal -->
     <div class="content">
-        <form action="" method="post" class="register-form">
+        <form action="../db/registrar.php" method="POST" class="register-form">
             <h2>Ingrese sus datos</h2>
-            <input type="email" name="" id="" class="" placeholder="" required>
-            <input type="password" name="" id="" class="" placeholder="" required>
+            <input type="email" name="correo" id="" class="" placeholder="" required>
+            <input type="password" name="contrasenia" id="" class="" placeholder="" required>
             <label for="name">Nombre:</label>
-            <input type="text" name="" class="" placeholder="" required>
+            <input type="text" name="nombre" class="" placeholder="" required>
             <label for="First-surname">Apellido paterno:</label>
-            <input type="text" name="" class="" placeholder="" required>
+            <input type="text" name="apellidoPaterno" class="" placeholder="" required>
             <label for="Second-surname">Apellido materno:</label>
-            <input type="text" name="" class="" placeholder="" required>
+            <input type="text" name="apellidoMaterno" class="" placeholder="" required>
             <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="" id="" class="" placeholder="" required>
+            <input type="date" name="fechaNacimiento" id="" class="" placeholder="" required>
             <div class="nested-content">
                 <label for="radio">Sexo:</label>
                 <label for="generoF">F</label>
@@ -38,11 +38,11 @@
                 <input type="radio" name="genero" id="" class="" value="masculino">
             </div>
             <label for="telefono">Numero de telefono:</label>
-            <input type="tel" name="" id="" class="" placeholder="" required>
+            <input type="tel" name="numTelefono" id="" class="" placeholder="" required>
             <label for="cm">Estatura:</label>
-            <input type="text" name="" id="" class=""  placeholder="" required>
+            <input type="text" name="estatura" id="" class=""  placeholder="" required>
             <label for="gr">Peso:</label>
-            <input type="tex" name="" id="" class="" placeholder="" required>
+            <input type="tex" name="peso" id="" class="" placeholder="" required>
             <button type="submit" name="" class="register-btn">Registrarse</button>
         </form>
     </div>
