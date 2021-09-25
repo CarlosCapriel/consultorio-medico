@@ -8,49 +8,138 @@
     <title>Registrarse</title>
     <!-- normalize CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- Estilos de CSS -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Estilos con CSS -->
+    <link rel="stylesheet" href="css/style_registro.css">
 </head>
 
 <body>
     <!-- Incio de Encabezado -->
-    <header></header>
+    <nav>
+        <div class="nav-wrapper | white">
+            <a href="#" class="brand-logo">Consultorio Medico</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="iniciar_sesion.html"><i class="material-icons left">person_add</i>Registrarse</a></li>
+                <li><a href="principal.html"><i class="material-icons left">home</i>Inicio</a></li>
+            </ul>
+        </div>
+    </nav>
     <!-- Fin de encabezado -->
 
     <!-- Incio del contenido principal -->
-    <div class="content">
-        <form action="" method="post" class="register-form">
-            <h2>Ingrese sus datos</h2>
-            <input type="email" name="" id="" class="" placeholder="" required>
-            <input type="password" name="" id="" class="" placeholder="" required>
-            <label for="name">Nombre:</label>
-            <input type="text" name="" class="" placeholder="" required>
-            <label for="First-surname">Apellido paterno:</label>
-            <input type="text" name="" class="" placeholder="" required>
-            <label for="Second-surname">Apellido materno:</label>
-            <input type="text" name="" class="" placeholder="" required>
-            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="" id="" class="" placeholder="" required>
-            <div class="nested-content">
-                <label for="radio">Sexo:</label>
-                <label for="generoF">F</label>
-                <input type="radio" name="genero" id="" class="" value="femenino">
-                <label for="generoM">M</label>
-                <input type="radio" name="genero" id="" class="" value="masculino">
+    <div class="container">
+        <form action="../db/registrar.php" method="POST" class="col s12 | center">
+            
+            <div class="row | white | z-depth-3">
+                <h2>Ingrese sus datos</h2>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                </div>
+
+
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">password</i>
+                    <input id="password" type="password" class="validate" required>
+                    <label for="password">Contraseña</label>
+                </div>
+
+                <div class="input-field col s12">
+
+                    <input id="icon_prefix" type="text" class="validate" required>
+                    <label for="icon_prefix">Nombre(s)</label>
+                </div>
+                <div class="input-field col s6">
+
+                    <input id="icon_paterno" type="text" class="validate" required>
+                    <label for="icon_paterno">Apellido paterno</label>
+                </div>
+                <div class="input-field col s6">
+
+                    <input id="icon_materno" type="text" class="validate" required>
+                    <label for="icon_materno">Apellido materno</label>
+                </div>
+                <div class="input-field col s6">
+                    <input type="date" class="datepicker">
+                    <label for="icon_date">Fecha de nacimiento</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" class="validate" required>
+                    <label for="icon_telephone">Numero de telefono</label>
+                </div>
+
+                <div class="input-field col s4">
+                    <p>
+                        <label class="gender" for="with-gap">Sexo:</label>
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" value="femenico" checked />
+                            <span>F</span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" value="masculino" />
+                            <span>M</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">height</i>
+                    <input id="icon_height" type="text" class="validate" placeholder="cm">
+                    <label for="icon_height">Estatura</label>
+                </div>
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">monitor_weight</i>
+                    <input id="icon_weight" type="tel" class="validate" placeholder="kg">
+                    <label for="icon_weight">Peso</label>
+                </div>
+                <div class="input-field col s12 ">
+                    <button class="btn-register | btn waves-effect waves-light"
+                        type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
             </div>
-            <label for="telefono">Numero de telefono:</label>
-            <input type="tel" name="" id="" class="" placeholder="" required>
-            <label for="cm">Estatura:</label>
-            <input type="text" name="" id="" class=""  placeholder="" required>
-            <label for="gr">Peso:</label>
-            <input type="tex" name="" id="" class="" placeholder="" required>
-            <button type="submit" name="" class="register-btn">Registrarse</button>
+
         </form>
     </div>
     <!-- Fin del contenido principal -->
-    
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
     <!-- Inicio del pie de pagina -->
-    <footer></footer>
-    <!-- Fin del pie de pagina -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 
 </html>
