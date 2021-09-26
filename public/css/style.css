@@ -1,3 +1,154 @@
-h1 {
-    color: blue;
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+/* Navegador */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    padding: 0 1rem 0;
+}
+
+.nav-bar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar__logo h1>a {
+    text-transform: uppercase;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', serif;
+    color: #A5A5AF;
+}
+
+.nav-bar__menu a {
+    display: block;
+    float: left;
+    text-align: center;
+    /* padding: 12px; */
+    padding: 30px 12px 30px;
+    word-spacing: 5px;
+    letter-spacing: 2pt;
+    color: #A5A5AF;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-bar__menu a:hover {
+    color: white;
+    background-color: #231f20;
+    margin-right: 0.1rem;
+}
+
+a.active {
+    color: white;
+    background-color: #77c9d4;
+}
+
+a.active:hover {
+    background-color: white;
+    color: #77c9d4;
+    margin-left: 0.5rem; 
+}
+/* Encabezado de pagina */
+.header {
+    background: linear-gradient(258.31deg, rgba(87, 188, 144, 0.855) 3.51%, rgba(119, 201, 212, 0.855) 91.11%), url(../img/img_header.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    
+    align-content: center;
+    padding: 5rem 4rem 5rem;
+}
+
+.header section {
+    color: #fff;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 65%;
+    align-content: center;
+    row-gap: 1rem;
+}
+.header h2{
+    font-size: 4rem;
+    padding-top: 8rem;
+    font-family: 'Roboto Slab', serif;
+}
+.header  p {
+    font-size: 1.3rem;
+    padding: 1.5rem 0 0;
+}
+/* Contenidos barios */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 4rem;
+    justify-content: center;
+    align-content: center;
+    padding: 4rem 6rem 4rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.main-content h2{
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.main-content i{
+    font-size: 4rem;
+    padding-top: 1rem;
+    color: #57BC90;
+}
+.main-content__card1 {
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+
+.main-content__card2 {
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.main-content__card3 {
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.main-content h2,
+p {
+    padding: 0.5rem;
+}
+/* Pie de pagina */
+
+.page-footer{
+    display: grid;
+    color: white;
+    background-color: #015249;
+}
+.container{
+  gap: 2rem;
+    align-content: center;
+    display: grid;
+    margin-left: 1.5rem;
+    
+}
+div.row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    justify-content: center;
+    padding: 2rem 3rem 1rem;
+}
+.footer-copyright >div{
+    background-color: #01473F;
+    padding: 1rem 3rem 1rem;
+    margin: revert;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }

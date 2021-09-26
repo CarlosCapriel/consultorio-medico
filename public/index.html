@@ -3,11 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio</title>
+    <!-- normalize CSS -->
+    <link rel="stylesheet" href="css_normalize/normalize.css">
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/10bbe628b1.js" crossorigin="anonymous"></script>
+    <!-- Estilos con CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>hola
-    </h1>
+    <!-- Navegador -->
+    <nav class="nav-bar">
+        <div class="nav-bar__logo ">
+
+            <img src="img/logo_clinica.png" alt="logo del consultorio" class="h-20 w-20">
+            <h1><a href="principal.html">consultorio medico</a></h1>
+        </div>
+
+        <div class="nav-bar__menu">
+
+            <a href="#"><i class="fas fa-sign-in-alt"></i>registarse</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i>iniciar sesion</a>
+            <a href="#" class="active"><i class="fa fa-home"></i>Inicio</a>
+
+        </div>
+    </nav>
+    <!--Inicio del encabezado-->
+    <header class="header">
+        <section class="">
+            <h2 class="">Bienvenido</h2>
+            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, dignissimos. Porro magnam rem voluptatum ullam necessitatibus. Voluptate, neque suscipit consectetur nesciunt quam itaque cumque beatae nulla.
+            </p>
+        </section>
+    </header>
+    <!--Fin del encabezado-->
+    <!--Incio de informacion de pantalla principal-->
+    <div class="main-content">
+        <div class="main-content__card1 | shadow-xl">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sunt tempore eligendi voluptatibus a eos possimus ullam magnam rem est.</p>
+            <i class="fas fa-user-md"></i>
+        </div>
+        <div class="main-content__card2 | shadow-xl">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam neque eos quas culpa, quo aliquid natus possimus ullam magnam.
+            </p>
+            <i class="far fa-calendar-check"></i>
+        </div>
+        <div class="main-content__card3 | shadow-xl">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore beatae vitae libero ipsa ut dolor at aliquam possimus! Debitis dignissimos quos quaerat?</p>
+            <i class="fas fa-viruses"></i>
+        </div>
+    </div>
+    <!--Fin de informacion de pantalla principal-->
+    <!--Inicio del pie de pagina-->
+    <footer class="page-footer">
+        <div class="container ">
+            <div class="row">
+                <div >
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="">You can use rows and columns here to organize your footer content.
+                    </p>
+                </div>
+                <div >
+                    <h5 class="white-text">Contactanos en:</h5>
+                    <ul>
+                        <li><a class="" href="#!">Link 1</a></li>
+                        <li><a class="" href="#!">Link 2</a></li>
+                        <li><a class="" href="#!">Link 3</a></li>
+                        <li><a class="" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div>
+                © 2021 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <!--Fin del pie de pagina-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>

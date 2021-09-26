@@ -8,28 +8,88 @@
     <title>Iniciar Sesion</title>
     <!-- normaliza CSS -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Estilos en CSS -->
+    <link rel="stylesheet" href="css/style_login.css">
 </head>
 
 <body>
-    <!-- Incio de Encabezado -->
-    <header></header>
+
+     <!-- Incio de Encabezado -->
+     <nav>
+        <div class="nav-wrapper | white">
+            <a href="#" class="brand-logo">Consultorio Medico</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="iniciar_sesion.html"><i class="material-icons left">person_add</i>Registrarse</a></li>
+                <li><a href="principal.html"><i class="material-icons left">home</i>Inicio</a></li>
+            </ul>
+        </div>
+    </nav>
     <!-- Fin de encabezado -->
 
     <!-- Incio del contenido principal -->
-    <div class="content">
-        <form action="" method="post" class="login-form">
-            <h2>Iniciar Sesion</h2>
-            <input type="email" name="" id="" class="" placeholder="" required>
-            <input type="password" name="" id="" class="" placeholder="" required>
-            <button type="submit" name="" class="login-btn">Ingresar</button>
-        </form>
+    <div class="container">
+        <div class="row | white| z-depth-3">
+            
+            <form class="col s12 | center ">
+                <h2>Iniciar Sesion</h2>
+                <div class="row ">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Ingrese un correo valido</span>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="icon_telephone" type="password" class="validate" required>
+                        <label for="icon_telephone">Contraseña</label>
+                    </div>
+                    <button class="login-btn | btn waves-effect | btn-large" type="submit" name="action">Ingresar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
     <!-- Fin del contenido principal -->
 
     <!-- Inicio del pie de pagina -->
-    <footer></footer>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright | teal darken-4">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
     <!-- Fin del pie de pagina -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 
 </html>
