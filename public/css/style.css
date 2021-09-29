@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-h1 {
-    color: blue;
-=======
+
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
 
@@ -155,5 +152,5 @@ div.row{
     margin: revert;
     display: grid;
     grid-template-columns: repeat(2,1fr);
->>>>>>> prueba
+
 }

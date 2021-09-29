@@ -30,116 +30,90 @@
     <!-- Fin de encabezado -->
 
     <!-- Incio del contenido principal -->
-<<<<<<< HEAD
-    <div class="content">
-        <form action="../db/registrar.php" method="POST" class="register-form">
-            <h2>Ingrese sus datos</h2>
-            <input type="email" name="correo" id="" class="" placeholder="" required>
-            <input type="password" name="contrasenia" id="" class="" placeholder="" required>
-            <label for="name">Nombre:</label>
-            <input type="text" name="nombre" class="" placeholder="" required>
-            <label for="First-surname">Apellido paterno:</label>
-            <input type="text" name="apellidoPaterno" class="" placeholder="" required>
-            <label for="Second-surname">Apellido materno:</label>
-            <input type="text" name="apellidoMaterno" class="" placeholder="" required>
-            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="fechaNacimiento" id="" class="" placeholder="" required>
-            <div class="nested-content">
-                <label for="radio">Sexo:</label>
-                <label for="generoF">F</label>
-                <input type="radio" name="genero" id="" class="" value="femenino">
-                <label for="generoM">M</label>
-                <input type="radio" name="genero" id="" class="" value="masculino">
-            </div>
-            <label for="telefono">Numero de telefono:</label>
-            <input type="tel" name="numTelefono" id="" class="" placeholder="" required>
-            <label for="cm">Estatura:</label>
-            <input type="text" name="estatura" id="" class=""  placeholder="" required>
-            <label for="gr">Peso:</label>
-            <input type="tex" name="peso" id="" class="" placeholder="" required>
-            <button type="submit" name="" class="register-btn">Registrarse</button>
-=======
+
+ 
     <div class="container">
         <form action="../db/registrar.php" method="POST" class="col s12 | center">
             
             <div class="row | white | z-depth-3">
                 <h2>Ingrese sus datos</h2>
+              
                 <div class="input-field col s12">
                     <i class="material-icons prefix">email</i>
-                    <input id="email" type="email" class="validate" required>
+                    <input id="email" type="email"  name="correo" class="validate" required>
                     <label for="email">Email</label>
                 </div>
 
 
                 <div class="input-field col s12">
                     <i class="material-icons prefix">password</i>
-                    <input id="password" type="password" class="validate" required>
+                    <input id="password" type="password"   name="contrasenia"class="validate" required>
                     <label for="password">Contraseña</label>
                 </div>
 
                 <div class="input-field col s12">
 
-                    <input id="icon_prefix" type="text" class="validate" required>
+                    <input id="icon_prefix" type="text" name="nombre"  class="validate" required>
                     <label for="icon_prefix">Nombre(s)</label>
                 </div>
                 <div class="input-field col s6">
 
-                    <input id="icon_paterno" type="text" class="validate" required>
+                    <input id="icon_paterno" type="text" name="apellidoPaterno" class="validate" required>
                     <label for="icon_paterno">Apellido paterno</label>
                 </div>
                 <div class="input-field col s6">
 
-                    <input id="icon_materno" type="text" class="validate" required>
+                    <input id="icon_materno" type="text" name="apellidoMaterno" class="validate" required>
                     <label for="icon_materno">Apellido materno</label>
                 </div>
                 <div class="input-field col s6">
-                    <input type="date" class="datepicker">
+                    <input type="date" name="fechaNacimiento" class="datepicker">
                     <label for="icon_date">Fecha de nacimiento</label>
                 </div>
 
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">phone</i>
-                    <input id="icon_telephone" type="tel" class="validate" required>
-                    <label for="icon_telephone">Numero de telefono</label>
-                </div>
-
-                <div class="input-field col s4">
+              <div class="input-field col s6">
                     <p>
                         <label class="gender" for="with-gap">Sexo:</label>
                         <label>
-                            <input class="with-gap" name="group3" type="radio" value="femenico" checked />
+                            <input class="with-gap" name="genero" type="radio" value="femenico" checked />
                             <span>F</span>
                         </label>
                         <label>
-                            <input class="with-gap" name="group3" type="radio" value="masculino" />
+                            <input class="with-gap" name="genero" type="radio" value="masculino" />
                             <span>M</span>
                         </label>
                     </p>
                 </div>
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" name="numTelefono" class="validate" required>
+                    <label for="icon_telephone">Numero de telefono</label>
+                </div>
 
                 <div class="input-field col s4">
                     <i class="material-icons prefix">height</i>
-                    <input id="icon_height" type="text" class="validate" placeholder="cm">
+                    <input id="icon_height" type="text" name="estatura" class="validate" placeholder="cm">
                     <label for="icon_height">Estatura</label>
                 </div>
                 <div class="input-field col s4">
                     <i class="material-icons prefix">monitor_weight</i>
-                    <input id="icon_weight" type="tel" class="validate" placeholder="kg">
+                    <input id="icon_weight" type="text" name="peso" class="validate" placeholder="kg">
                     <label for="icon_weight">Peso</label>
                 </div>
                 <div class="input-field col s12 ">
                     <button class="btn-register | btn waves-effect waves-light"
-                        type="submit" name="action">Submit
+                        type="submit" name="action">Registrarse
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
 
             </div>
 
->>>>>>> prueba
+
         </form>
     </div>
     <!-- Fin del contenido principal -->
+    <!--- Inicion del Pie de pagina--->
     <footer class="page-footer">
         <div class="container">
           <div class="row">
@@ -165,7 +139,7 @@
           </div>
         </div>
       </footer>
-    <!-- Inicio del pie de pagina -->
+    <!-- Fin del pie de pagina -->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
