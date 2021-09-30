@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/normalize.css">
-    <link rel="stylesheet" href="public/css/style.css">
-    <title>Clinical Medicals</title>
+    <title>Consultorio</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
 </head>
 <body>
-    <h1>Algo extraordinario esta por venir...</h1>
+    <!--encabezado-->
+    <?php include 'public/navegador.php' ?>
+    <!--contenedor-->
+    <?php include 'controllers/routing.php' ?>
+    <!--Pie de pagina-->
+    <?php include 'public/footer.php' ?>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
