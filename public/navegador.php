@@ -15,6 +15,7 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="?menu=registrarse"><i class="material-icons left">person_add</i>Registrarse</a></li>
                 <li><a href="?menu=login"><i class="material-icons left">login</i>Iniciar sesion</a></li>
+                <li><a href="?menu=paciente"><i class="material-icons left">person</i>paciente</a></li>
             </ul>
         </div>
     </nav>

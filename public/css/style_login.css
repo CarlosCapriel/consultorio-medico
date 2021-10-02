@@ -1,18 +1,15 @@
-.nav-wrapper{
-    padding: 0 1.5rem 0;
-}
-.nav-wrapper a{
-    color: grey;
-}footer.page-footer{
-    background-color: #015249;
+div.container{
+    margin-top: 2rem;
 }
 div.row{
-    margin-top: 2rem;
-    border-radius: 2rem;
-    padding: 1rem;
-}form{
-    
-    padding: 1rem 1rem 1rem;
+    justify-content: center;
+}
+form{
+    padding: 0.5rem;
+}
+div.form-row{
+    padding: 1rem 1.5rem 1rem;
+   
 }
 button.login-btn{
     background-color: #231f20;
