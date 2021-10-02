@@ -12,10 +12,13 @@ switch ($var_getMenu) {
         require_once('./public/home.php');
         break;
     case "login":
-        require_once('./public/iniciar_sesion.php');
+        require_once('./public/login.php');
         break;
     case "registrarse":
         require_once('./public/registrarse.php');
+        break;
+    case "paciente":
+        require_once('./public/paciente.php');
         break;
     default:
         require_once('./public/home.php');

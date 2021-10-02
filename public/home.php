@@ -1,7 +1,7 @@
   <!-- Estilos en CSS -->
 <style>
      div.header {
-        background: linear-gradient(258.31deg, rgba(87, 188, 144, 0.855) 3.51%, rgba(119, 201, 212, 0.855) 91.11%), url(../img/img_home.jpg) no-repeat center center fixed;
+        background: linear-gradient(258.31deg, rgba(87, 188, 144, 0.855) 3.51%, rgba(119, 201, 212, 0.855) 91.11%), url(public/img/img_home.jpg) no-repeat center center fixed;
         background-size: cover;
         height: 600px;
         /* display: flex; */
@@ -26,8 +26,8 @@
             <!-- Note that "m4 l3" was added -->
             <!-- Grey navigation panel -->
     
-            <h2 class="">Bienvenido</h2>
-            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, dignissimos. Porro magnam rem
+            <h2 class="white-text">Bienvenido</h2>
+            <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, dignissimos. Porro magnam rem
                 voluptatum ullam necessitatibus. Voluptate, neque suscipit consectetur nesciunt quam itaque cumque
                 beatae nulla.
             </p>

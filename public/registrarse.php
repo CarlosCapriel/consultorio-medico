@@ -1,35 +1,7 @@
-<style>
-    div.row {
-        margin-top: 2rem;
-        border-radius: 2rem;
-        padding: 1rem 2rem 1rem;
-    }
+<!--Estilos CSS-->
+<link href="public/css/style_registro.css" rel="stylesheet" />
 
-    form {
-        padding: 1rem 2rem 1rem;
-        margin: 2rem;
-        justify-content: center;
-        align-content: center;
-
-    }
-
-    div.container>form {
-
-        align-content: center;
-        justify-content: center;
-        padding: 2rem;
-        margin-top: 3rem;
-    }
-
-    label.gender {
-        font-size: 1.2rem;
-    }
-
-    button.btn-register {
-        width: unset;
-    }
-</style>
-
+<!-- contenido -->
 <div class="container">
     <form action="../db/registrar.php" method="POST" class="col s12 | center">
 

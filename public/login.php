@@ -1,22 +1,5 @@
 <!-- Estilos en CSS -->
-<style>
-    div.container{
-        margin-top: 2rem;
-    }
-    div.row{
-        justify-content: center;
-    }
-    form{
-        padding: 0.5rem;
-    }
-    div.form-row{
-        padding: 1rem 1.5rem 1rem;
-       
-    }
-    button.login-btn{
-        background-color: #231f20;
-    }
-</style>
+<link href="public/css/style_login.css" rel="stylesheet" />
 
 <div class="container">
     <div class="row | white">

@@ -1,36 +1,29 @@
-.nav-wrapper{
-    padding: 0 1.5rem 0;
-}
-.nav-wrapper a{
-    color: grey;
-}
-div.row{
-    
+div.row {
     margin-top: 2rem;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem;
 }
-form{
+
+form {
     padding: 1rem 2rem 1rem;
     margin: 2rem;
     justify-content: center;
     align-content: center;
-    
+
 }
-div.container >form{
-    
+
+div.container>form {
+
     align-content: center;
     justify-content: center;
     padding: 2rem;
     margin-top: 3rem;
 }
-label.gender{
-    
+
+label.gender {
     font-size: 1.2rem;
 }
-button.btn-register{
-    width: unset;
-}footer.page-footer{
 
-    background-color: #015249;
+button.btn-register {
+    width: unset;
 }
