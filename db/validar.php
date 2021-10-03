@@ -1,16 +1,16 @@
 <?php
 
 $email=$_POST['email'];
-$contraseña=$_POST['contraseña'];
+$contrasenia=$_POST['contrasenia'];
     require_once "conexion/Conexion.php";
 
     $conexion = new Conexion;
 
-    $consulta="SELECT*FROM login where correo='$email' and contrasenia='$contraseña'";
+    $consulta="SELECT*FROM login where correo='$email' and contrasenia='$contrasenia'";
         if($sql = $conexion->obtenerDatos($consulta)){
         echo "Usuario validado correctamente";
         session_start();
-        $call = "CALL login ($email, $contraseña)";
+        //$call = "CALL login ($email, $contraseña)";
         if($sql[0]['id_rol']==1){ //medico
             header("location:./public/medico.php");
         

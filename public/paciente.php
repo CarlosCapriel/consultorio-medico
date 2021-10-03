@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<?php 
+session_start();
+$cadena = $_SESSION['id_paciente'];
+?>
+>>>>>>> a79370443c41a2dac4a7e43d9a5cde790d8ecef6
 <!-- Estilos de CSS -->
 <link rel="stylesheet" href="public/css/style_paciente.css">
 

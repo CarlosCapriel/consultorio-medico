@@ -15,7 +15,7 @@
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">lock</i>
-                    <input id="icon_telephone" name ="contraseña" type="password" class="validate" required>
+                    <input id="icon_telephone" name ="contrasenia" type="password" class="validate" required>
                     <label for="icon_telephone">Contraseña</label>
                 </div>
                 <button class="login-btn | btn waves-effect | btn-large" type="submit" name="action">Ingresar
