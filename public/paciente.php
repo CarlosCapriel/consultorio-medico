@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$cadena = $_SESSION['id_paciente'];
+?>
 <div class="row">
 
     <div class="col s12 ">
@@ -23,24 +27,27 @@
             <div class="col s2"></div>
             <div class="col s12 m4 l8  blue lighten-5">
                 <h4>Agendar cita</h4>
-
+            <form action="./db/registrarcita.php" method="POST" >
                 <div class="row white">
+                    <input type="hidden" id ="id"name="id_paciente" value="<?php echo $cadena?>">
                     <label>Fechas disponibles</label>
-                    <select class="browser-default">
+                    <input type="date" id ="fecha"name="fecha">
+                    <!-- <select class="browser-default" type="date" id="fecha" name="fecha">
                         <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
+                        <option value="1" >2021/10/02</option>
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
-                    </select>
+                    </select> -->
                 </div>
                 <div class="row ">
-                    <label>Horarios disponibles</label>
-                    <select class="browser-default">
+                    <input type="time" id="hora" name="hora">
+                   <!-- <label>Horarios disponibles</label>
+                    <select class="browser-default" type="time" id ="hora" name="hora">
                         <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
+                        <option value="">17:00</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select> -->
                 </div>
                 <div class="row">
                     <label>Padece alguna condicion medica</label>
@@ -61,7 +68,7 @@
                     </button>
                 </div>
 
-
+            </form>
             </div>
         </div>
 
@@ -89,7 +96,7 @@
             element.innerHTML = `
             <div class="row">
                 <p>Escriba aqui: </p>
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control id="condicion"" />
             </div>
         `;
             input.appendChild(element);
