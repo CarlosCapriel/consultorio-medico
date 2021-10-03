@@ -9,14 +9,18 @@ $contraseña=$_POST['contraseña'];
     $consulta="SELECT*FROM login where correo='$email' and contrasenia='$contraseña'";
         if($sql = $conexion->obtenerDatos($consulta)){
         echo "Usuario validado correctamente";
-        
+        session_start();
         $call = "CALL login ($email, $contraseña)";
         if($sql[0]['id_rol']==1){ //medico
-            header("location:../public/medico.php");
+            header("location:./public/medico.php");
         
         }else
         if($sql[0]['id_rol']==2){ //cliente
-            header("location:../public/cliente.php");
+            $consultaid = "SELECT * FROM pacientes where correo='$email'";
+            $sqlid = $conexion->obtenerDatos($consultaid); 
+            $_SESSION['id_paciente'] = $sqlid[0]['id_paciente'];
+            header("location: ../index.php?menu=paciente");
+            return;
         }
 
         }else{
