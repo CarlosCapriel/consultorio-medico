@@ -35,7 +35,7 @@ $cadena = $_SESSION['id_paciente'];
                 <div class="row white">
                     <input type="hidden" id ="id"name="id_paciente" value="<?php echo $cadena?>">
                     <label>Fechas disponibles</label>
-                    <input type="date" id ="fecha"name="fecha" required>
+                    <input type="text" id ="fecha"name="fecha" class="datepicker" required>
                     <!-- <select class="browser-default" type="date" id="fecha" name="fecha">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1" >2021/10/02</option>
@@ -44,7 +44,7 @@ $cadena = $_SESSION['id_paciente'];
                     </select> -->
                 </div>
                 <div class="row ">
-                    <input type="time" id="hora" name="hora" required>
+                    <input type="text" id="hora" name="hora" class="timepicker"  required>
                    <!-- <label>Horarios disponibles</label>
                     <select class="browser-default" type="time" id ="hora" name="hora">
                         <option value="" disabled selected>Choose your option</option>
@@ -79,3 +79,16 @@ $cadena = $_SESSION['id_paciente'];
     </div>
 </div>
 <script src="public/js/paciente_select.js"></script>
+<script>
+    // Or with jQuery
+
+    $(document).ready(function () {
+        $('.datepicker').datepicker();
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+        $('.timepicker').timepicker();
+    });
+</script>
