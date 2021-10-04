@@ -8,8 +8,8 @@
 $consulta = "INSERT INTO citas (id_cita, id_paciente,id_medico, fecha_cita, hora, estatus) VALUES (null,'$id_paciente',1, '$fecha', '$hora',1)";
 $sql=$conexion->nonQuery($consulta);
 if($sql=1){
-      echo "New record created successfully";
+      echo '<script>alert("Cita creada con exito");window.location.href="../index.php?menu=paciente"</script>';
 } else {
-      echo "Error:";
+      echo '<script>alert("Error al intentar crear la cita");window.location.href="../index.php?menu=paciente"</script>';
 }
 ?>
