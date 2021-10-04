@@ -35,7 +35,7 @@
         $stmt3-> execute();
         $resultado3 = $stmt3->get_result();
         
-        header("location: ../index.php?menu=paciente");
+        header("location: ../index.php?menu=inicio");
         
     }else{
         echo "El correo ya esta en uso";

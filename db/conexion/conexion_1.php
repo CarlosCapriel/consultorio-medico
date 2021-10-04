@@ -6,7 +6,7 @@ $db_host = 'localhost';
 $db_user = 'root';
 $db_password = '';
 
-$db_db = 'consultorio';
+$db_db = 'clinicalmedicals';
 $mysqli = @new mysqli(
 $db_host,
 $db_user,
