@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-=======
 <?php 
 session_start();
 $cadena = $_SESSION['id_paciente'];
 ?>
->>>>>>> a79370443c41a2dac4a7e43d9a5cde790d8ecef6
 <!-- Estilos de CSS -->
 <link rel="stylesheet" href="public/css/style_paciente.css">
 
@@ -38,7 +35,7 @@ $cadena = $_SESSION['id_paciente'];
                 <div class="row white">
                     <input type="hidden" id ="id"name="id_paciente" value="<?php echo $cadena?>">
                     <label>Fechas disponibles</label>
-                    <input type="date" id ="fecha"name="fecha">
+                    <input type="date" id ="fecha"name="fecha" required>
                     <!-- <select class="browser-default" type="date" id="fecha" name="fecha">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1" >2021/10/02</option>
@@ -47,7 +44,7 @@ $cadena = $_SESSION['id_paciente'];
                     </select> -->
                 </div>
                 <div class="row ">
-                    <input type="time" id="hora" name="hora">
+                    <input type="time" id="hora" name="hora" required>
                    <!-- <label>Horarios disponibles</label>
                     <select class="browser-default" type="time" id ="hora" name="hora">
                         <option value="" disabled selected>Choose your option</option>
