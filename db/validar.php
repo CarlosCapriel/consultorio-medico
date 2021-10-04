@@ -9,14 +9,16 @@ $contrasenia=$_POST['contrasenia'];
     $consulta="SELECT*FROM login where correo='$email' and contrasenia='$contrasenia'";
         if($sql = $conexion->obtenerDatos($consulta)){
         session_start();
+        $_SESSION['loggedUserName'] = $sql[0]['correo'] ;
+
         if($sql[0]['id_rol']==1){ 
             header("location:./public/medico.php");
         
-        }else
-        if($sql[0]['id_rol']==2){ 
+        }else if($sql[0]['id_rol']==2){ 
             $consultaid = "SELECT * FROM pacientes where correo='$email'";
             $sqlid = $conexion->obtenerDatos($consultaid); 
             $_SESSION['id_paciente'] = $sqlid[0]['id_paciente'];
+            $_SESSION['nombre'] = $sqlid[0]['nombre'];
             echo '<script>alert("Sesion iniciada con exito");window.location.href="../index.php?menu=paciente"</script>';
             return;
         }
