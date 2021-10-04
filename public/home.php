@@ -1,24 +1,5 @@
   <!-- Estilos en CSS -->
-<style>
-     div.header {
-        background: linear-gradient(258.31deg, rgba(87, 188, 144, 0.855) 3.51%, rgba(119, 201, 212, 0.855) 91.11%), url(public/img/img_home.jpg) no-repeat center center fixed;
-        background-size: cover;
-        height: 600px;
-        /* display: flex; */
-        olor: white;
-        padding: 5rem 4rem 5rem;
-    }
-    div.section{
-        align-content: center;
-    }
-    div.container{
-        width: 80%;
-            
-    }
-    div.card{
-        border-radius: 0.6rem;
-    }
-</style>
+  <link rel="stylesheet" href="public/css/style.css">
 
 <!-- Contenido de la pagina principal -->
 <div class="row | header">
@@ -26,10 +7,11 @@
             <!-- Note that "m4 l3" was added -->
             <!-- Grey navigation panel -->
     
-            <h2 class="white-text">Bienvenido</h2>
-            <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, dignissimos. Porro magnam rem
-                voluptatum ullam necessitatibus. Voluptate, neque suscipit consectetur nesciunt quam itaque cumque
-                beatae nulla.
+            <h2 class="header__title">Bienvenido</h2>
+            <p class="header__content">Cuidandote desde casa, te ofrecemos un servicio de calidad 
+                ajustandose a una nueva normalidad ahora puedes agendar tus consultas medicas en 
+                linea, porque procuramos tu salud y queremos que estes bien registarte ahora con 
+                nosotros y cuidemonos todos. 
             </p>
         </div>
     </div>
@@ -40,12 +22,12 @@
                 <!-- Promo Content 1 goes here -->
                 <div class="card white darken-1 hoverable">
                     <div class="card-content black-text">
-                        <span class="card-title">Card Title</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <span class="card-title">Mision</span>
+                        <p>Realizar un sitio web para ayudar a todas las personas que arriesgan su 
+                            salud, así mismo reduciendo completamente el tiempo de espera.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+                        <a href="#">Mas información</a>
                         
                     </div>
                 </div>
@@ -54,12 +36,14 @@
                 <!-- Promo Content 2 goes here -->
                 <div class="card white darken-1 hoverable">
                     <div class="card-content black-text">
-                        <span class="card-title">Card Title</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <span class="card-title">Atencion</span>
+                        <p>Te queremos brindar tdodos nuestro servicios con la mejor calidad, por eso
+                            nuestros horarios se ajustan a tus necesidades, te ofrecemos horarios de consulta 
+                            flexibles
+                        </p>
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+                        <a href="#">Mas información</a>
                         
                     </div>
                 </div>
@@ -68,12 +52,13 @@
                 <!-- Promo Content 3 goes here -->
                 <div class="card white darken-1 hoverable">
                     <div class="card-content black-text">
-                        <span class="card-title">Card Title</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <span class="card-title">Vision</span>
+                        <p>Proporcionarte un servicio de calidad que se ajuste a las nuevas regulaciones de
+                            salud y que garantize tu seguridad incluso antes de salir de casa
+                        </p>
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+                        <a href="#">Mas información</a>
                         
                     </div>
                 </div>
