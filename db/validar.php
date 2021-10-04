@@ -12,7 +12,7 @@ $contrasenia=$_POST['contrasenia'];
         $_SESSION['loggedUserName'] = $sql[0]['correo'] ;
 
         if($sql[0]['id_rol']==1){ 
-            header("location:./public/medico.php");
+            header("location:../index.php?menu=medico");
         
         }else if($sql[0]['id_rol']==2){ 
             $consultaid = "SELECT * FROM pacientes where correo='$email'";
