@@ -3,7 +3,7 @@
 
 <!-- contenido -->
 <div class="container">
-    <form action="../db/registrar.php" method="POST" class="col s12 | center">
+    <form action="./db/registrar.php" method="POST" class="col s12 | center">
 
         <div class="row | white | z-depth-3">
             <h2>Ingrese sus datos</h2>
@@ -37,7 +37,7 @@
                 <label for="icon_materno">Apellido materno</label>
             </div>
             <div class="input-field col s6">
-                <label for="icon_date">Fechas disponibles</label>
+                <label for="icon_date">Fecha de nacimiento</label>
                 <input type="text" name="fechaNacimiento" class="datepicker">
 
             </div>
@@ -82,9 +82,10 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    // Or with jQuery
-
-    $(document).ready(function () {
-        $('.datepicker').datepicker();
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, {
+        format : 'yyyy-mm-dd'
     });
+  });
 </script>
