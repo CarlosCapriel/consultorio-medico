@@ -1,6 +1,6 @@
 <?php 
-session_start();
 $cadena = $_SESSION['id_paciente'];
+$nombre = $_SESSION['nombre'];
 ?>
 <!-- Estilos de CSS -->
 <link rel="stylesheet" href="public/css/style_paciente.css">
@@ -9,7 +9,7 @@ $cadena = $_SESSION['id_paciente'];
 <div class="row">
 
     <div class="col s12 ">
-        <h2>Bienvenido |</h2>
+        <h2>Bienvenido | <?php  echo $nombre?></h2>
         <hr>
     </div>
     <div class="aside col s3 ">
@@ -33,7 +33,7 @@ $cadena = $_SESSION['id_paciente'];
                 <h4>Agendar cita</h4>
             <form action="./db/registrarcita.php" method="POST" >
                 <div class="row white">
-                    <input type="hidden" id ="id"name="id_paciente" value="<?php echo $cadena?>">
+                    <input type="hidden" id ="id"name="id_paciente" value="<?php  echo $cadena?>">
                     <label>Fechas disponibles</label>
                     <input type="text" id ="fecha"name="fecha" class="datepicker" required>
                     <!-- <select class="browser-default" type="date" id="fecha" name="fecha">
