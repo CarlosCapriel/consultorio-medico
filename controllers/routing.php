@@ -17,6 +17,10 @@ switch ($var_getMenu) {
     case "registrarse":
         require_once('./public/registrarse.php');
         break;
+    case "logout":
+            $session_destroy = session_destroy();
+            header("location: ./index.php?menu=home");
+        break;
     case "paciente":
         require_once('./public/paciente.php');
         break;
