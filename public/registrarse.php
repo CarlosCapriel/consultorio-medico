@@ -1,6 +1,43 @@
 <!--Estilos CSS-->
 <link href="public/css/style_registro.css" rel="stylesheet" />
+<script>
+    function soloLetras(e){
+    var key = e.keyCode || e.which,
+      tecla = String.fromCharCode(key).toLowerCase(),
+      letras = "áéíóúabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚBCDEFGHIJKLMNÑOPQRSTUVWXYZ",
+      especiales = [8, 37, 39, 46],
+      tecla_especial = false;
 
+    for (var i in especiales) {
+      if (key == especiales[i]) {
+        tecla_especial = true;
+        break;
+      }
+    }
+
+    if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+      return false;
+    }
+  }
+      function soloNum(e){
+    var key = e.keyCode || e.which,
+      tecla = String.fromCharCode(key).toLowerCase(),
+      letras = "0123456789.",
+      especiales = [8, 37, 39, 46],
+      tecla_especial = false;
+
+    for (var i in especiales) {
+      if (key == especiales[i]) {
+        tecla_especial = true;
+        break;
+      }
+    }
+
+    if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+      return false;
+    }
+  }
+</script>
 <!-- contenido -->
 <div class="container">
     <form action="./db/registrar.php" method="POST" class="col s12 | center">
@@ -23,17 +60,17 @@
 
             <div class="input-field col s12">
 
-                <input id="icon_prefix" type="text" name="nombre" class="validate" required>
+                <input id="icon_prefix" type="text" name="nombre" onkeypress="return soloLetras(event)" class="validate" required>
                 <label for="icon_prefix">Nombre(s)</label>
             </div>
             <div class="input-field col s6">
 
-                <input id="icon_paterno" type="text" name="apellidoPaterno" class="validate" required>
+                <input id="icon_paterno" type="text" name="apellidoPaterno" onkeypress="return soloLetras(event)" class="validate" required>
                 <label for="icon_paterno">Apellido paterno</label>
             </div>
             <div class="input-field col s6">
 
-                <input id="icon_materno" type="text" name="apellidoMaterno" class="validate" required>
+                <input id="icon_materno" type="text" name="apellidoMaterno" onkeypress="return soloLetras(event)" class="validate" required>
                 <label for="icon_materno">Apellido materno</label>
             </div>
             <div class="input-field col s6">
@@ -46,29 +83,31 @@
                 <p>
                     <label class="gender" for="with-gap">Sexo:</label>
                     <label>
-                        <input class="with-gap" name="genero" type="radio" value="femenico" checked />
+                        
+                        <input class="with-gap" name="genero" type="radio" value="Fem" checked />
                         <span>F</span>
                     </label>
                     <label>
-                        <input class="with-gap" name="genero" type="radio" value="masculino" />
+                        
+                        <input class="with-gap" name="genero" type="radio" value="Masc" />
                         <span>M</span>
                     </label>
                 </p>
             </div>
             <div class="input-field col s4">
                 <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" name="numTelefono" class="validate" required>
+                <input id="icon_telephone" type="tel" name="numTelefono" minlength="10" maxlength="10" onkeypress="return soloNum(event)" class="validate" onkeyup="javascript:validarSiNumero(event)" required>
                 <label for="icon_telephone">Numero de telefono</label>
             </div>
 
             <div class="input-field col s4">
                 <i class="material-icons prefix">height</i>
-                <input id="icon_height" type="text" name="estatura" class="validate" placeholder="cm">
+                <input id="icon_height" type="text" name="estatura" minlength="4" maxlength="4" onkeypress="return soloNum(event)" class="validate" placeholder="1.70">
                 <label for="icon_height">Estatura</label>
             </div>
             <div class="input-field col s4">
                 <i class="material-icons prefix">monitor_weight</i>
-                <input id="icon_weight" type="text" name="peso" class="validate" placeholder="kg">
+                <input id="icon_weight" type="text" name="peso" maxlength="3" onkeypress="return soloNum(event)" class="validate" placeholder="kg">
                 <label for="icon_weight">Peso</label>
             </div>
             <div class="input-field col s12 ">
