@@ -22,6 +22,7 @@
                 echo "Algo anda mal con la conexion";
                 die();
             }
+            return $this->conexion;
         }
 
         private function datosConexion() {
@@ -49,7 +50,11 @@
 
             return $this->convertirUTF8($resultArray);
         }
-
+        public function ingresarDatos($query) {
+            $results = $this->conexion->query($query);
+          
+        }        
+        
         public function nonQuery($query) {
             $results = $this->conexion->query($query);
             return $this->conexion->affected_rows;
