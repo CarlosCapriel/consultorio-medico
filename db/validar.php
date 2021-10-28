@@ -2,7 +2,7 @@
 
 $email=$_POST['email'];
 $contrasenia=$_POST['contrasenia'];
-    require_once "conexion/Conexion.php";
+    require_once "conexion/conexion.php";
 
     $conexion = new Conexion;
 

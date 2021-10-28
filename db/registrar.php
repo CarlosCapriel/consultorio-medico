@@ -1,7 +1,7 @@
 <?php
-    require_once "conexion/Conexion.php";
+    require_once "conexion/conexion.php";
 
-    $conexion = new conexion;
+    $conexion = new Conexion;
               
     $correo=$_POST['correo']; 
     $contrasenia=$_POST['contrasenia'];
