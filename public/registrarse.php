@@ -1,6 +1,7 @@
 <!--Estilos CSS-->
 <link href="public/css/style_registro.css" rel="stylesheet" />
-<script>
+<script src="public/js/validacion_registro.js"></script>
+<!-- <script>
     function soloLetras(e){
     var key = e.keyCode || e.which,
       tecla = String.fromCharCode(key).toLowerCase(),
@@ -37,7 +38,7 @@
       return false;
     }
   }
-</script>
+</script> -->
 <!-- contenido -->
 <div class="container">
     <form action="./db/registrar.php" method="POST" class="col s12 | center">
@@ -97,7 +98,7 @@
             <div class="input-field col s4">
                 <i class="material-icons prefix">phone</i>
                 <input id="icon_telephone" type="tel" name="numTelefono" minlength="10" maxlength="10" onkeypress="return soloNum(event)" class="validate" onkeyup="javascript:validarSiNumero(event)" required>
-                <label for="icon_telephone">Numero de telefono</label>
+                <label for="icon_telephone">Número de teléfono</label>
             </div>
 
             <div class="input-field col s4">

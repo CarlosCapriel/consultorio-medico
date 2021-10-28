@@ -17,7 +17,7 @@
         }else{
         ?>
             <form action="./db/validar.php" method="POST" class="col s8 | center | z-depth-3 center ">
-                <h2>Iniciar Sesion</h2>
+                <h2>Iniciar Sesión</h2>
                 <div class="row | form-row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">email</i>

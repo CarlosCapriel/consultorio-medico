@@ -20,7 +20,7 @@ $nombre = $_SESSION['nombre'];
 
         </div>
         <div class="aside-content row ">
-            <h5><a href="">Condiciones medicas</a></h5>
+            <h5><a href="">Condiciones médicas</a></h5>
         </div>
     </div>
 
@@ -54,7 +54,7 @@ $nombre = $_SESSION['nombre'];
                     </select> -->
                 </div>
                 <div class="row">
-                    <label>Padece alguna condicion medica</label>
+                    <label>Padece alguna condición médica</label>
                     <select id="option" class="browser-default">
                         <option value="" disabled selected>Choose your option</option>
                         <option id="1" value="1">si</option>
