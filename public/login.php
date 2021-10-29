@@ -7,15 +7,15 @@
         <div class="col s2"></div>
         <?php
         $estado_session = session_status();
-        if($estado_session == PHP_SESSION_NONE){
+        if ($estado_session == PHP_SESSION_NONE) {
             session_start();
         }
         if (isset($_SESSION['loggedUserName'])) {
             ?>
-            <h3>No tiene permisos para entrar a la página <h3>
+            <h3>No tiene permisos para entrar a la página. <h3>
             <?php
-        }else{
-        ?>
+        } else {
+            ?>
             <form action="./db/validar.php" method="POST" class="col s8 | center | z-depth-3 center ">
                 <h2>Iniciar Sesión</h2>
                 <div class="row | form-row">
@@ -35,7 +35,7 @@
                     </button>
                  </div>
             </form>
-            <?php 
+            <?php
         }?>
     </div>
 </div>
