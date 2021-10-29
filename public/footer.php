@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Nuestro proposito es ayudarte</h5>
-                    <p class="grey-text text-lighten-4">Diseños este sitio web para rebasar la crisis generada por 
+                    <p class="grey-text text-lighten-4">Diseñamos este sitio web para rebasar la crisis generada por 
                         las nuevas medidas de seguridad ante la pandemia, brindando una manera mas accesible de 
                         agendar citas medicas y evitar las aglomeraciones, para cuidarte a ti y a nosotros.
                     </p>
