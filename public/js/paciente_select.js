@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
         element.innerHTML = `
             <div class="row">
                 <p>Escriba aqui: </p>
-                <input type="text" class="form-control" />
+                <input type="text" name="condiciones"class="form-control" required/>
             </div>
         `;
         input.appendChild(element);
