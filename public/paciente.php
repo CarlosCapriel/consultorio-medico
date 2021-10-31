@@ -79,16 +79,30 @@ $nombre = $_SESSION['nombre'];
     </div>
 </div>
 <script src="public/js/paciente_select.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
     // Or with jQuery
-
+    /*
     $(document).ready(function () {
         $('.datepicker').datepicker();
     });
 
     // Or with jQuery
-
+    /*
     $(document).ready(function(){
         $('.timepicker').timepicker();
+    });
+    */
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems, {
+            format : 'yyyy-mm-dd'
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.timepicker');
+        var instances = M.Timepicker.init(elems, options);
     });
 </script>
