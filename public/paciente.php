@@ -22,6 +22,9 @@ $nombre = $_SESSION['nombre'];
         <div class="aside-content row ">
             <h5><a href="">Condiciones médicas</a></h5>
         </div>
+        <div class="aside-content row ">
+            <h5><a href="?menu=historialcitas">Historial de citas</a></h5>
+        </div>
     </div>
 
     <div class="col s9">
@@ -44,6 +47,7 @@ $nombre = $_SESSION['nombre'];
                     </select> -->
                 </div>
                 <div class="row ">
+                <label>Horarios disponibles</label>
                     <input type="text" id="hora" name="hora" class="timepicker"  required>
                    <!-- <label>Horarios disponibles</label>
                     <select class="browser-default" type="time" id ="hora" name="hora">

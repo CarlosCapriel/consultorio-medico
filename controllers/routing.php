@@ -25,8 +25,11 @@ switch ($var_getMenu) {
         require_once('./public/paciente.php');
         break;
     case "medico":
-    require_once('./public/medico.php');
-    break;    
+        require_once('./public/medico.php');
+    break;
+    case "historialcitas":
+        require_once('./public/historialcitas.php');
+        break;    
     default:
         require_once('./public/home.php');
 }
