@@ -105,8 +105,9 @@ $nombre = $_SESSION['nombre'];
         });
     });
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.timepicker');
-        var instances = M.Timepicker.init(elems, options);
+    $('.timepicker').timepicker({
+        onSelect: function (time) {
+            console.log(time)
+        }
     });
 </script>
