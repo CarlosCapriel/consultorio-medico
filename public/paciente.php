@@ -106,10 +106,8 @@ $nombre = $_SESSION['nombre'];
     });
 
     $('.timepicker').timepicker({
-
-        onSelect: function (hora) {
-            console.log(hora)
-
+        onSelect: function (time) {
+            console.log(time)
         }
     });
 </script>
