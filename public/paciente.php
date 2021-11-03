@@ -22,6 +22,9 @@ $nombre = $_SESSION['nombre'];
         <div class="aside-content row ">
             <h5><a href="">Condiciones médicas</a></h5>
         </div>
+        <div class="aside-content row ">
+            <h5><a href="?menu=historialCitas">Historial de citas</a></h5>
+        </div>
     </div>
 
     <div class="col s9">
@@ -89,23 +92,23 @@ $nombre = $_SESSION['nombre'];
     });
 
     // Or with jQuery
-    /*
+    */
     $(document).ready(function(){
         $('.timepicker').timepicker();
     });
-    */
+    
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.datepicker');
         var instances = M.Datepicker.init(elems, {
             format : 'yyyy-mm-dd'
         });
     });
-
+/*
     $('.timepicker').timepicker({
 
         onSelect: function (hora) {
             console.log(hora)
 
         }
-    });
+    });*/
 </script>
