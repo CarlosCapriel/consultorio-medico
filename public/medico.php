@@ -17,6 +17,9 @@
         <div class="aside-content row ">
             <h5><a href="">Pacientes</a></h5>
         </div>
+        <div class="aside-content row ">
+            <h5><a href="">Generar receta</a></h5>
+        </div>
     </div>
 
     <div class="col s9">
