@@ -2,6 +2,9 @@
 $cadena = $_SESSION['id_paciente'];
 $nombre = $_SESSION['nombre'];
 ?>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
 <!-- Estilos de CSS -->
 <link rel="stylesheet" href="public/css/style_paciente.css">
 
@@ -29,9 +32,10 @@ $nombre = $_SESSION['nombre'];
         <div class="row">
 
             <div class="col s2"></div>
-            <div class="col s12 m4 l8  blue lighten-5">
+            <!-- blue lighten-5 -->
+            <div class="col s12 m4 l8 z-depth-2" style="padding: 1rem 2rem 1rem;">
                 <h4>Agendar cita</h4>
-            <form action="./db/registrarcita.php" method="POST" >
+            <form action="./db/registrarcita.php" method="POST"  >
                 <div class="row white">
                     <input type="hidden" id ="id"name="id_paciente" value="<?php  echo $cadena?>">
                     <label>Fechas disponibles</label>
@@ -44,6 +48,7 @@ $nombre = $_SESSION['nombre'];
                     </select> -->
                 </div>
                 <div class="row ">
+                <label>Horarios disponibles</label>
                     <input type="text" id="hora" name="hora" class="timepicker"  required>
                    <!-- <label>Horarios disponibles</label>
                     <select class="browser-default" type="time" id ="hora" name="hora">
@@ -56,7 +61,7 @@ $nombre = $_SESSION['nombre'];
                 <div class="row">
                     <label>Padece alguna condición médica</label>
                     <select id="option" class="browser-default">
-                        <option value="" disabled selected>Choose your option</option>
+                        <option value="" disabled selected>Seleccione una respuesta</option>
                         <option id="1" value="1">si</option>
                         <option id="2" value="0">no</option>
                     </select>
@@ -67,7 +72,7 @@ $nombre = $_SESSION['nombre'];
 
                 <div class="row center">
                     <br>
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
                         <i class="material-icons right">send</i>
                     </button>
                 </div>

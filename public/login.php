@@ -23,7 +23,7 @@
                         <i class="material-icons prefix">email</i>
                         <input id="email" name="email" type="email" class="validate" required>
                         <label for="email">Email</label>
-                        <span class="helper-text" data-error="datos invalidos" data-success="datos validos">Helper text</span>
+                        <span class="helper-text" data-error="Rellene este campo" data-success="campo con datos">Helper text</span>
                     </div>
                     <div class="input-field col s12">
                         <i class="material-icons prefix">lock</i>
