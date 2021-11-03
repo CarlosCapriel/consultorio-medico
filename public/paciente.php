@@ -47,6 +47,7 @@ $nombre = $_SESSION['nombre'];
                     </select> -->
                 </div>
                 <div class="row ">
+                <label>Horarios disponibles</label>
                     <input type="text" id="hora" name="hora" class="timepicker"  required>
                    <!-- <label>Horarios disponibles</label>
                     <select class="browser-default" type="time" id ="hora" name="hora">
@@ -105,10 +106,8 @@ $nombre = $_SESSION['nombre'];
     });
 /*
     $('.timepicker').timepicker({
-
-        onSelect: function (hora) {
-            console.log(hora)
-
+        onSelect: function (time) {
+            console.log(time)
         }
     });*/
 </script>
