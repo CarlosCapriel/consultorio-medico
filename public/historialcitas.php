@@ -8,14 +8,13 @@ require_once "./db/conexion/Conexion.php";
     $consulta = "SELECT id_cita,fecha_cita,hora,estatus FROM citas where id_paciente = $cadena";
     $sql = $conexion->obtenerDatos($consulta);
 ?>
-
 <table width="700" cellpadding="2" cellspacing="0" bordercolor="#CCCCCC">
 <tr>
     <td>id_cita</td>
     <td>Fecha</td>
     <td>Hora</td>
     <td>Estatus</td>
-<tr>
+</tr>
 
 <?php 
     for($i=0; $i < count($sql); $i++){
@@ -32,3 +31,5 @@ require_once "./db/conexion/Conexion.php";
 <?php 
 }
 ?>
+</table>
+
