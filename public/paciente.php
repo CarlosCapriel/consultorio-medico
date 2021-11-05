@@ -6,6 +6,8 @@ $nombre = $_SESSION['nombre'];
 
 <!-- Estilos de CSS -->
 <link rel="stylesheet" href="public/css/style_paciente.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
 <!-- contenedor -->
 <div class="row">
@@ -88,7 +90,7 @@ $nombre = $_SESSION['nombre'];
 <script src="public/js/paciente_select.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
+<!--<script>
     // Or with jQuery
     /*
     $(document).ready(function () {
@@ -113,4 +115,50 @@ $nombre = $_SESSION['nombre'];
             console.log(time)
         }
     });*/
+</script>-->
+<script>
+    $(function(){
+        $('#fecha').datepicker({
+            format: 'dd/ mm /yyyy',
+            disableWeekends: true,
+          /* minDate: new Date(2021,10,3),
+           maxDate: new Date(2022,11,31),*/
+          minDate: new Date(),
+        firstDay:1,
+           yearRange: [2021,2022],
+            i18n:{
+                months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+            'Octubre', 'Noviembre', 'Diciembre'],
+            weekdaysAbbrev: ['D', 'L', 'M', 'M','J','V','S'],
+            
+            }
+
+        });
+    });
 </script>
+<script>
+$(document).ready(function(){
+    $('#hora').timepicker({
+     defaultTime: 'now',
+      showClearBtn: true,
+       autoClose: false,
+       /*startDate: moment().startOf('8:00am'),
+    endDate: moment().startOf('3:00pm').add(32, '3:30pm'),
+       /*twelveHour: false,*/
+       /*min: [8,0],
+max: [18,50],*/
+
+       i18n:{
+           cancel: 'Cancelar',
+           clear: 'Limpiar',
+           done: 'Aceptar'
+       }
+    
+
+});
+});    
+
+</script>    
+
+
+
