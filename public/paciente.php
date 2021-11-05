@@ -2,8 +2,7 @@
 $cadena = $_SESSION['id_paciente'];
 $nombre = $_SESSION['nombre'];
 ?>
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
 
 <!-- Estilos de CSS -->
 <link rel="stylesheet" href="public/css/style_paciente.css">

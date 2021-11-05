@@ -1,44 +1,7 @@
 <!--Estilos CSS-->
 <link href="public/css/style_registro.css" rel="stylesheet" />
 <script src="public/js/validacion_registro.js"></script>
-<!-- <script>
-    function soloLetras(e){
-    var key = e.keyCode || e.which,
-      tecla = String.fromCharCode(key).toLowerCase(),
-      letras = "áéíóúabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚBCDEFGHIJKLMNÑOPQRSTUVWXYZ",
-      especiales = [8, 37, 39, 46],
-      tecla_especial = false;
 
-    for (var i in especiales) {
-      if (key == especiales[i]) {
-        tecla_especial = true;
-        break;
-      }
-    }
-
-    if (letras.indexOf(tecla) == -1 && !tecla_especial) {
-      return false;
-    }
-  }
-      function soloNum(e){
-    var key = e.keyCode || e.which,
-      tecla = String.fromCharCode(key).toLowerCase(),
-      letras = "0123456789.",
-      especiales = [8, 37, 39, 46],
-      tecla_especial = false;
-
-    for (var i in especiales) {
-      if (key == especiales[i]) {
-        tecla_especial = true;
-        break;
-      }
-    }
-
-    if (letras.indexOf(tecla) == -1 && !tecla_especial) {
-      return false;
-    }
-  }
-</script> -->
 <!-- contenido -->
 <div class="container">
     <form action="./db/registrar.php" method="POST" class="col s12 | center">
