@@ -2,31 +2,50 @@
 <link rel="stylesheet" href="public/css/style_nav.css">
 
 <?php
-$estado_session = session_status();
-if($estado_session == PHP_SESSION_NONE)
-{
-session_start();
-}
-if (isset($_SESSION['loggedUserName'])) {
-
-    ?>
-    <!-- Navegador logeado-->
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper | white">
-                <a href="?menu=home" class="brand-logo grey-text text-darken-1">Consultorio Médico</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="?menu=logout"><i class="material-icons left">logout</i>Cerrar sesión</a></li>
-                </ul>
+    $estado_session = session_status();
+    if ($estado_session == PHP_SESSION_NONE) {
+        session_start();
+    }
+    if (isset($_SESSION['loggedUserName'])) {
+        if ($_SESSION['id_rol'] == 1) {
+            ?>
+            <!-- Navegador logeado Medico -->
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper | white">
+                        <a href="?menu=home" class="brand-logo grey-text text-darken-1">Consultorio Médico</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="?menu=horariosm">Horarios</a></li>
+                            <li><a href="">Pacientes</a></li>
+                            <li><a href="?menu=logout"><i class="material-icons left">logout</i>Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                    <ul class="sidenav" id="mobile-demo">
+                    <li><a href="?menu=logout"><i class="material-icons left">logout</i>Cerrar sesión Medico</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul class="sidenav" id="mobile-demo">
-            <li><a href="?menu=logout"><i class="material-icons left">logout</i>Cerrar sesión</a></li>
-            </ul>
-        </nav>
-    </div>
     <?php
-} else { 
-    ?>
+        } else {
+            ?>
+            <!-- Navegador logeado Paciente -->
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper | white">
+                        <a href="?menu=home" class="brand-logo grey-text text-darken-1">Consultorio Médico</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="?menu=logout"><i class="material-icons left">logout</i>Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                    <ul class="sidenav" id="mobile-demo">
+                    <li><a href="?menu=logout"><i class="material-icons left">logout</i>Cerrar sesión</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <?php
+        }
+    } else {
+        ?>
     <!-- navegador sin logear -->
     <nav>
         <div class="nav-wrapper | white">
@@ -46,8 +65,8 @@ if (isset($_SESSION['loggedUserName'])) {
             </ul>
         </div>
     </nav>
-    <?php 
-} ?>
+    <?php
+    } ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
