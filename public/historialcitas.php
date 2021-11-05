@@ -10,7 +10,7 @@ require_once "./db/conexion/Conexion.php";
 ?>
 <table width="700" cellpadding="2" cellspacing="0" bordercolor="#CCCCCC">
 <tr>
-    <td>id_cita</td>
+    <td>Cita</td>    
     <td>Fecha</td>
     <td>Hora</td>
     <td>Estatus</td>
@@ -22,10 +22,18 @@ require_once "./db/conexion/Conexion.php";
     
 ?>
     <tr>
-        <td><?php echo $sql[$i]['id_cita']; ?></td>
+        <td><?php echo $i+1?></td>
         <td><?php echo $sql[$i]['fecha_cita']; ?></td>
         <td><?php echo $sql[$i]['hora']; ?></td>
-        <td><?php echo $sql[$i]['estatus']; ?></td>
+        <?php 
+            if($sql[$i]['estatus']==1){ ?>
+            <td>En espera</td>
+        <?php
+            }else{ ?>
+            <td>Finalizada</td>
+        <?php        
+            }
+        ?>
     </tr>
 
 <?php 
