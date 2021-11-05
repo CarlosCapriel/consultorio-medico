@@ -135,30 +135,39 @@ $nombre = $_SESSION['nombre'];
 
         });
     });
-</script>
-<script>
-$(document).ready(function(){
-    $('#hora').timepicker({
-     defaultTime: 'now',
-      showClearBtn: true,
-       autoClose: false,
-       /*startDate: moment().startOf('8:00am'),
-    endDate: moment().startOf('3:00pm').add(32, '3:30pm'),
-       /*twelveHour: false,*/
-       /*min: [8,0],
-max: [18,50],*/
 
-       i18n:{
-           cancel: 'Cancelar',
-           clear: 'Limpiar',
-           done: 'Aceptar'
-       }
+</script>
+
+<!--<script>
+    $(function(){
+        $('#hora').timepicker({
+            defaultTime: 'now',
+            showClearBtn: true,
+            autoClose: false,
+            twelveHour: false,
+            i18n{
+             cancel: 'Cancelar',
+             clear: 'Limpiar',
+             done: 'Aceptar',
+             }
+        });
+    });
+</script>!-->
+<script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.timepicker');
+    var instances = M.Timepicker.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.timepicker').timepicker();
     
 
-});
-});    
+  });
+  </script>
 
-</script>    
 
 
 
