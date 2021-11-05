@@ -11,7 +11,7 @@ $nombre = $_SESSION['nombre'];
 <div class="row">
 
     <div class="col s12 ">
-        <h2>Bienvenido | <?php  echo $nombre?></h2>
+        <h2>Bienvenido  <?php  echo $nombre?></h2>
         <hr>
     </div>
     <div class="aside col s3 ">
