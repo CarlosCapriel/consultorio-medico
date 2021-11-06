@@ -9,6 +9,7 @@ $nombre = $_SESSION['nombre'];
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
+
 <!-- contenedor -->
 <div class="row">
 
@@ -53,7 +54,8 @@ $nombre = $_SESSION['nombre'];
                 </div>
                 <div class="row ">
                 <label>Horarios disponibles</label>
-                    <input type="text" id="hora" name="hora" class="timepicker"  required>
+                <input type="time" name="hora" min="08:00" max="15:30" step="1800" required>
+                   <!-- <input type="text" id="hora" name="hora" class="timepicker"  required>-->
                    <!-- <label>Horarios disponibles</label>
                     <select class="browser-default" type="time" id ="hora" name="hora">
                         <option value="" disabled selected>Choose your option</option>
@@ -117,13 +119,19 @@ $nombre = $_SESSION['nombre'];
     });*/
 </script>-->
 <script>
+    
+     var d = new Date();
+
+    
     $(function(){
         $('#fecha').datepicker({
             format: 'dd/ mm /yyyy',
             disableWeekends: true,
-          /* minDate: new Date(2021,10,3),
-           maxDate: new Date(2022,11,31),*/
-          minDate: new Date(),
+            /*minDate: new Date(currentYear, currentMonth),*/
+            minDate:new Date(d.setDate(d.getDate() + 1)),
+           /*minDate: new Date(),*/
+           
+          
         firstDay:1,
            yearRange: [2021,2022],
             i18n:{
@@ -138,35 +146,8 @@ $nombre = $_SESSION['nombre'];
 
 </script>
 
-<!--<script>
-    $(function(){
-        $('#hora').timepicker({
-            defaultTime: 'now',
-            showClearBtn: true,
-            autoClose: false,
-            twelveHour: false,
-            i18n{
-             cancel: 'Cancelar',
-             clear: 'Limpiar',
-             done: 'Aceptar',
-             }
-        });
-    });
-</script>!-->
-<script>
-     document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.timepicker');
-    var instances = M.Timepicker.init(elems, options);
-  });
 
-  // Or with jQuery
 
-  $(document).ready(function(){
-    $('.timepicker').timepicker();
-    
-
-  });
-  </script>
 
 
 
