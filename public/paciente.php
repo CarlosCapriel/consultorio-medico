@@ -6,6 +6,9 @@ $nombre = $_SESSION['nombre'];
 
 <!-- Estilos de CSS -->
 <link rel="stylesheet" href="public/css/style_paciente.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
 
 <!-- contenedor -->
 <div class="row">
@@ -51,7 +54,8 @@ $nombre = $_SESSION['nombre'];
                 </div>
                 <div class="row ">
                 <label>Horarios disponibles</label>
-                    <input type="text" id="hora" name="hora" class="timepicker"  required>
+                <input type="time" name="hora" min="08:00" max="15:30" step="1800" required>
+                   <!-- <input type="text" id="hora" name="hora" class="timepicker"  required>-->
                    <!-- <label>Horarios disponibles</label>
                     <select class="browser-default" type="time" id ="hora" name="hora">
                         <option value="" disabled selected>Choose your option</option>
@@ -88,7 +92,7 @@ $nombre = $_SESSION['nombre'];
 <script src="public/js/paciente_select.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
+<!--<script>
     // Or with jQuery
     /*
     $(document).ready(function () {
@@ -113,4 +117,38 @@ $nombre = $_SESSION['nombre'];
             console.log(time)
         }
     });*/
+</script>-->
+<script>
+    
+     var d = new Date();
+
+    
+    $(function(){
+        $('#fecha').datepicker({
+            format: 'dd/ mm /yyyy',
+            disableWeekends: true,
+            /*minDate: new Date(currentYear, currentMonth),*/
+            minDate:new Date(d.setDate(d.getDate() + 1)),
+           /*minDate: new Date(),*/
+           
+          
+        firstDay:1,
+           yearRange: [2021,2022],
+            i18n:{
+                months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+            'Octubre', 'Noviembre', 'Diciembre'],
+            weekdaysAbbrev: ['D', 'L', 'M', 'M','J','V','S'],
+            
+            }
+
+        });
+    });
+
 </script>
+
+
+
+
+
+
+
