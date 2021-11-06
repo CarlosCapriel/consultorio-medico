@@ -18,8 +18,9 @@
 
             <div class="input-field col s12">
                 <i class="material-icons prefix">password</i>
-                <input id="password" type="password" name="contrasenia" class="validate" required>
+                <input id="password" type="password" name="contrasenia" minlength="8" class="validate" required>
                 <label for="password">Contraseña</label>
+                <span class="helper-text" data-error="Minimo 8 caracteres" data-success="Aceptable">Helper text</span>
             </div>
 
             <div class="input-field col s12">
@@ -47,12 +48,12 @@
                 <p>
                     <label class="gender" for="with-gap">Sexo:</label>
                     <label>
-                        
+
                         <input class="with-gap" name="genero" type="radio" value="Fem" checked />
                         <span>F</span>
                     </label>
                     <label>
-                        
+
                         <input class="with-gap" name="genero" type="radio" value="Masc" />
                         <span>M</span>
                     </label>
@@ -66,12 +67,13 @@
 
             <div class="input-field col s4">
                 <i class="material-icons prefix">height</i>
-                <input id="icon_height" type="text" name="estatura" minlength="4" maxlength="4" onkeypress="return soloNum(event)" class="validate" placeholder="1.70">
+                <input id="icon_height" type="number" name="estatura" min="50" max="270"  onkeypress="return soloNum(event)" class="validate" placeholder="cm">
+                <span class="helper-text" data-error="No parece ser un valor aceptable" data-success="">Helper text</span>
                 <label for="icon_height">Estatura</label>
             </div>
             <div class="input-field col s4">
                 <i class="material-icons prefix">monitor_weight</i>
-                <input id="icon_weight" type="text" name="peso" maxlength="3" onkeypress="return soloNum(event)" class="validate" placeholder="kg">
+                <input id="icon_weight" type="text" name="peso" minlength="2" maxlength="3" onkeypress="return soloNum(event)" class="validate" placeholder="kg">
                 <label for="icon_weight">Peso</label>
             </div>
             <div class="input-field col s12 ">
@@ -86,10 +88,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.datepicker');
-    var instances = M.Datepicker.init(elems, {
-        format : 'yyyy-mm-dd'
+    var f = new Date();
+    var año = f.getFullYear()-10;
+    var mes = f.getMonth() + 1;
+    var dia = f.getDay();
+    
+    var f1 = new Date(dia+"/"+mes+"/"+año);
+    var f2 = new Date('01/10/1910');
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems, {
+            yearRange: 20,
+            defaultDate: f1,
+            maxDate: f1,           
+            minDate: f2,
+            format: 'yyyy-mm-dd'
+
+        });
     });
-  });
 </script>
