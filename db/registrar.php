@@ -31,7 +31,7 @@
         
         $sql3 = "INSERT INTO `login`(`correo`,`contrasenia`,`id_rol`) VALUES ('$correo','$contrasenia','$idrol')";
         $resultado3 = $conexion->ingresarDatos($sql3);
-      echo '<script>alert("Registro exitoso");window.location.href="../index.php?menu=inicio"</script>';  
+      echo '<script>alert("Registro exitoso");window.location.href="../index.php?menu=login"</script>';  
      
     }    
     
