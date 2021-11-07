@@ -20,7 +20,6 @@ $contrasenia=$_POST['contrasenia'];
             $_SESSION['id_paciente'] = $sqlid[0]['id_paciente'];
             $_SESSION['nombre'] = $sqlid[0]['nombre'];
             echo '<script>alert("Sesion iniciada con exito");window.location.href="../index.php?menu=paciente"</script>';
-            return;
         }
 
         }else{

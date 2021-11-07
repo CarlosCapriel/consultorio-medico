@@ -37,7 +37,7 @@ $nombre = $_SESSION['nombre'];
             <!-- blue lighten-5 -->
             <div class="col s12 m4 l8 z-depth-2" style="padding: 1rem 2rem 1rem;">
                 <h4>Agendar cita</h4>
-            <form action="./db/registrarcita.php" method="POST"  >
+            <form action="./db/registrarcita.php" method="POST">
                 <div class="row white">
                     <input type="hidden" id ="id"name="id_paciente" value="<?php  echo $cadena?>">
                     <label>Fechas disponibles</label>
