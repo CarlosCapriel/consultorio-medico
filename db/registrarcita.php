@@ -1,5 +1,5 @@
 <?php 
-    require_once "conexion/Conexion.php";
+    require_once "conexion/conexion.php";
     $id_paciente=$_POST['id_paciente'];
     $fecha=$_POST['fecha'];
     $hora=$_POST['hora'];
