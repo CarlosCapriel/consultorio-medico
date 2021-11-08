@@ -11,6 +11,9 @@ window.addEventListener('load', function () {
         for (i = 0; i < select.value; i++) {
             createInputs();
         }
+        for (i = 0; i <= select.value; i++) {
+            createInputNo();
+        }
     });
 
     function createInputs() {
@@ -19,6 +22,16 @@ window.addEventListener('load', function () {
             <div class="row">
                 <p>Escriba aqui: </p>
                 <input type="text" name="condiciones"class="form-control" required/>
+            </div>
+        `;
+        input.appendChild(element);
+        //${i + 1}
+    }
+    function createInputNo() {
+        var element = document.createElement('div');
+        element.innerHTML = `
+            <div class="row">
+                <input type="hidden" value="no"name="condiciones"class="form-control" readonly/>
             </div>
         `;
         input.appendChild(element);
