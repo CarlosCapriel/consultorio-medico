@@ -33,6 +33,9 @@ switch ($var_getMenu) {
     case "horariosm":
         require_once('./public/views/FormHorarios.php');
         break;
+    case "agendarc":
+        require_once('./public/views/AgendarCita.php');
+        break;
     default:
         require_once('./public/home.php');
 }

@@ -34,6 +34,9 @@
                     <div class="nav-wrapper | white">
                         <a href="?menu=home" class="brand-logo grey-text text-darken-1">Consultorio Médico</a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="?menu=agendarc">Agendar cita</a></li>
+                            <li><a href="">Condiciones médicas</a></li>
+                            <li><a href="?menu=historialCitas">Historial de citas</a></li>
                             <li><a href="?menu=logout"><i class="material-icons left">logout</i>Cerrar sesión</a></li>
                         </ul>
                     </div>
