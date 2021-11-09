@@ -1,15 +1,10 @@
-<?php
-$cadena = $_SESSION['id_paciente'];
-
-?>
-
 <div class="col s12 m4 l8 z-depth-2" style="padding: 1rem 2rem 1rem;">
     <h4>Agendar cita</h4>
-    <form action="././db/registrarcita.php" method="POST">
+    <form action="./db/registrarcita.php" method="POST">
         <div class="row white">
-            <input type="hidden" id ="id" name="id_paciente" value="<?php echo $cadena?>">
+            <input type="hidden" id ="id"name="id_paciente" value="<?php  echo $cadena?>">
             <label>Fechas disponibles</label>
-            <input type="text" id ="fecha" name="fecha" class="datepicker" required>
+            <input type="text" id ="fecha"name="fecha" class="datepicker" required>
         </div>
         <div class="row ">
             <label>Horarios disponibles</label>
@@ -55,7 +50,6 @@ $cadena = $_SESSION['id_paciente'];
         var elems = document.querySelectorAll('.datepicker');
         var instances = M.Datepicker.init(elems, {
             format : 'yyyy-mm-dd'
-
         });
     });
 /*

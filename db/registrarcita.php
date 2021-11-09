@@ -15,3 +15,4 @@ if ($sql=1) {
 } else {
     echo '<script>alert("Error al intentar crear la cita");window.location.href="../index.php?menu=paciente"</script>';
 }
+//INSERT INTO `citas` (`id_cita`, `id_paciente`, `id_medico`, `fecha_cita`, `hora`, `estatus`) VALUES (NULL, '39', '1', '2021-11-25', '12:00', '1'); 
