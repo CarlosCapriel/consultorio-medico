@@ -38,7 +38,7 @@ $cadena = $_SESSION['id_paciente'];
 <script src="public/js/paciente_select.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!--<script>
+<script>
     // Or with jQuery
     /*
     $(document).ready(function () {
@@ -47,10 +47,15 @@ $cadena = $_SESSION['id_paciente'];
 
     // Or with jQuery
     */
-    $(document).ready(function(){
+    var d = new Date();
+    /*var año = d.getFullYear() +1 ;
+    var mes = d.getMonth();
+    var dia = d.getDay() -1;
+    /*$(document).ready(function(){
         $('.timepicker').timepicker();
-    });
-    
+    });*/
+    /*var f1 = new Date(dia+"/"+mes+"/"+año);
+    /*var f2 = new Date('01/10/1910');*/
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.datepicker');
         var instances = M.Datepicker.init(elems, {
@@ -65,7 +70,7 @@ $cadena = $_SESSION['id_paciente'];
         }
     });*/
 </script>-->
-<script>
+<!--<script>
     
      var d = new Date();
 
@@ -91,4 +96,4 @@ $cadena = $_SESSION['id_paciente'];
         });
     });
 
-</script>
+</script>-->
