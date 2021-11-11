@@ -9,4 +9,4 @@
 </div>
 <!-- Crear Receta Medica 
 //Es la interfaz que estara por defecto al inicio de sesion del medico -->
- <?php include 'public/FormRecetas.php' ?>
+<?php include 'public/FormRecetas.php' ?>
