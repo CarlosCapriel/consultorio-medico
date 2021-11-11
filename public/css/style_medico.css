@@ -1,10 +1,7 @@
-div.row{
-    margin-bottom: revert;
-}
-div.aside{
-    border-right: 1px solid rgb(167, 152, 152);
+/* div.row{
+     margin-bottom: revert; 
     
-}div.aside-content.row > h5{
-    padding: 1rem;
-  
+} */
+div.row{
+    padding: 6rem;
 }
