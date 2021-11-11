@@ -4,3 +4,8 @@
 .nav-wrapper a{
     color: grey;
 } 
+/* @media screen and (min-width: 514px) {
+    #logo{
+        font-size: 12px;
+    }
+  } */
