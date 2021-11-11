@@ -9,7 +9,7 @@ require_once "./db/conexion/Conexion.php";
     $sql = $conexion->obtenerDatos($consulta);
 ?>
 <div class="container">
-<table width="700" cellpadding="2" cellspacing="0" bordercolor="#CCCCCC" class="striped">
+<table class="highlight centered responsive-table" width="700" cellpadding="2" cellspacing="0" bordercolor="#CCCCCC">
     <tr class="teal darken-4 white-text">
         <td>Cita</td>    
         <td>Fecha</td>
