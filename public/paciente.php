@@ -17,15 +17,16 @@ $nombre = $_SESSION['nombre'];
         <h2>Bienvenido  <?php  echo $nombre?></h2>
         <hr>
     </div>
-    <div class="col s9">
-        <!-- Teal page content  -->
+</div>
+   <!-- <div class="col s9">
+       
         <div class="row">
 
             <div class="col s2"></div>
-            <!-- blue lighten-5 -->
-            <!-- Form agendar cita -->
+           
+            Form agendar cita
         </div>
-    </div>
+    </div>-->
 
 
 
