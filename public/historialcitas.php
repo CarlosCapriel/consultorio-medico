@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-<?php 
-require_once "./db/conexion/conexion.php";
-=======
 <?php
-require_once "./db/conexion/Conexion.php";
->>>>>>> 179e02a07ce73f2a524c11e07471f81e978632bb
-
+require_once "./db/conexion/conexion.php";
     $cadena = $_SESSION['id_paciente'];
     $nombre = $_SESSION['nombre'];
     $conexion = new Conexion;
