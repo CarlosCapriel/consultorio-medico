@@ -1,0 +1,11 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+
+div.welcome{
+    padding: 1rem 2rem;
+    background-color: #77c9d4;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
+}
