@@ -11,12 +11,28 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
+    <style>
+       
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <!--encabezado-->
-    <?php include 'public/navegador.php' ?>
-    <!--contenedor-->
-    <?php include 'controllers/routing.php' ?>
+    <header>
+        <!--encabezado-->
+        <?php include 'public/navegador.php' ?>
+    </header>
+    <main>
+        <!--contenedor-->
+        <?php include 'controllers/routing.php' ?>
+    </main>
     <!--Pie de pagina-->
     <?php include 'public/footer.php' ?>
 
