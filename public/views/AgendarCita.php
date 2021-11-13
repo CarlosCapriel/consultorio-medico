@@ -48,57 +48,5 @@ $cadena = $_SESSION['id_paciente'];
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="public/js/agendar.js"></script>
 
-<!--<script>
-    // Or with jQuery
-    /*
-    $(document).ready(function () {
-        $('.datepicker').datepicker();
-    });
 
-    // Or with jQuery
-    */
-    $(document).ready(function(){
-        $('.timepicker').timepicker();
-    });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.datepicker');
-        var instances = M.Datepicker.init(elems, {
-            format : 'yyyy-mm-dd'
 
-        });
-    });
-/*
-    $('.timepicker').timepicker({
-        onSelect: function (time) {
-            console.log(time)
-        }
-    });*/
-</script>-->
-<!--<script>
-    /*
-     var d = new Date();
-
-    
-    $(function(){
-        $('#fecha').datepicker({
-            format: 'dd/ mm /yyyy',
-            disableWeekends: true,
-            /*minDate: new Date(currentYear, currentMonth),*/
-            minDate:new Date(d.setDate(d.getDate() + 1)),
-           /*minDate: new Date(),*/
-           
-          
-        firstDay:1,
-           yearRange: [2021,2022],
-            i18n:{
-                months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
-            'Octubre', 'Noviembre', 'Diciembre'],
-            weekdaysAbbrev: ['D', 'L', 'M', 'M','J','V','S'],
-            
-            }
-
-        });
-    });
-*/
-</script> -->
