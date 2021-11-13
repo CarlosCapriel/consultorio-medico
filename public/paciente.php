@@ -5,31 +5,75 @@ $nombre = $_SESSION['nombre'];
 
 
 <!-- Estilos de CSS -->
-<link rel="stylesheet" href="public/css/style_paciente.css">
+<!--<link rel="stylesheet" href="public/css/style_paciente.css">-->
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-
+<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 <!-- contenedor -->
-<div class="row">
-
-    <div class="col s12 ">
-        <h2>Bienvenido  <?php  echo $nombre?></h2>
-        <hr>
+<div class = "content">
+<section class="black">
+  <div class="carousel carousel-slider" data-indicators="true">
+    <div class="carousel-fixed-item">
+      <div class="container">
+        <h1 class="white-text">Bienvenido
+            <?php echo $nombre?>
+        </h1>
+        
+      </div>
     </div>
-    <div class="col s9">
-        <!-- Teal page content  -->
-        <div class="row">
-
-            <div class="col s2"></div>
-            <!-- blue lighten-5 -->
-            <!-- Form agendar cita -->
-        </div>
+    <div class="carousel-item blue accent-1  black-text" href="#one!">
+      <div class="container">
+        <h2>¡Cuidemonos!</h2>
+        <p class="black-text">Desde casa cuidamos de ti.</p>
+      </div>  
     </div>
+    <div class="carousel-item  green lighten-3 black-text" href="#two!">
+      <div class="container">
+        <h2>¡Protégete y apoya a los demás!</h2>
+        <p class="black-text">Estemos unidos</p>
+      </div>  
+    </div>
+    <div class="carousel-item blue accent-1 black-text" href="#three!">
+      <div class="container">
+        <h2>#Yo me quedo en casa</h2>
+        <p class="black-text">Cuida a tu familia.</p>
+      </div>  
+    </div>
+    <div class="carousel-item  green lighten-3  black-text" href="#four!">
+      <div class="container">
+        <h2>¡Agenda tu cita desde aquí!</h2>
+        <p class="black-text">Evita convivir con mucha gente</p>
+      </div>  
+    </div>
+  </div>
+</section>
+</div>
 
 
 
+<!-- Gitter Chat Link -->
 
+<script>
+// CAROUSEL
+$(document).ready(function(){
+  $('.carousel').carousel(
+  {
+    dist: 0,
+    padding: 0,
+    fullWidth: true,
+    indicators: true,
+    duration: 50,
+  }
+  );
+});
 
-
-
+autoplay()   
+function autoplay() {
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 3000);
+}
+</script>
