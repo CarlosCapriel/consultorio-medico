@@ -25,28 +25,28 @@ $nombre = $_SESSION['nombre'];
 
                 </div>
             </div>
-            <div class="carousel-item slime-item01   black-text" href="#one!">
+            <div class="carousel-item slime-item01   white-text" href="#one!">
                 <div class="container">
                     <h2>¡Cuidemonos!</h2>
-                    <p class="black-text">Desde casa cuidamos de ti.</p>
+                    <p class="white-text">Desde casa cuidamos de ti.</p>
                 </div>
             </div>
-            <div class="carousel-item  slime-item02 black-text" href="#two!">
+            <div class="carousel-item  slime-item02 white-text" href="#two!">
                 <div class="container">
                     <h2>¡Protégete y apoya a los demás!</h2>
-                    <p class="black-text">Estemos unidos</p>
+                    <p class="white-text">Estemos unidos</p>
                 </div>
             </div>
-            <div class="carousel-item  slime-item01 black-text" href="#three!">
+            <div class="carousel-item  slime-item01 white-text" href="#three!">
                 <div class="container">
                     <h2>#Yo me quedo en casa</h2>
-                    <p class="black-text">Cuida a tu familia.</p>
+                    <p class="white-text">Cuida a tu familia.</p>
                 </div>
             </div>
-            <div class="carousel-item  slime-item02  black-text" href="#four!">
+            <div class="carousel-item  slime-item02  white-text" href="#four!">
                 <div class="container">
                     <h2>¡Agenda tu cita desde aquí!</h2>
-                    <p class="black-text">Evita convivir con mucha gente</p>
+                    <p class="white-text">Evita convivir con mucha gente</p>
                 </div>
             </div>
         </div>
