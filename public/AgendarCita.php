@@ -1,3 +1,6 @@
+<?php
+$cadena = $_SESSION['id_paciente'];
+?>
 <div class="col s12 m4 l8 z-depth-2" style="padding: 1rem 2rem 1rem;">
     <h4>Agendar cita</h4>
     <form action="./db/registrarcita.php" method="POST">
