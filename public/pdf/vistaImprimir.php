@@ -1,7 +1,6 @@
-
 <!--Estilos CSS-->
-<link href="style_receta.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+
 <div class="container">
     <div class="row z-depth-3 content">
         <div class="row ">
@@ -13,24 +12,24 @@
             </div>
         </div>
         <div class="row">
-            <form class="row" action="pdf/generarPdf.php" method="POST">
+            <form class="row">
 
                 <div class="row">
                     <div class="col s6">
                         <span>Dr. </span>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dicta iste.
                             eligendi sed. Beatae, sapiente ratione?</p>
-                        <span>Cedula Professional:</span>
+                        <span>Cedula Professional: 0000gskj4543j53</span>
                     </div>
 
                     <div class="col s6">
-                        <label for="date">Fecha de expedición</label>
-                        <input type="date" name="fecha" id="date">
+                        <label for="date">Fecha de expedición: <?php  echo $_POST['fecha'] ?></label>
+                        <input type="date" name= id="date">
                     </div>
                     <div class="col s6">
                         <div class="input-field">
-                            <input type="text" name="paciente" id="input_name" class="validate">
-                            <label for="input_name">Nombre del paciente:</label>
+                            <input type="text" name="" id="input_name" class="validate">
+                            <label for="input_name">Nombre del paciente:  <?php  echo $_POST['paciente'] ?> </label>
                         </div>
                     </div>
                 </div>
@@ -40,22 +39,22 @@
 
                     <div class="col s6">
                         <div class="input-field">
-                            <input type="text" name="condiciones" id="input_condicion">
-                            <label for="input_condicion">Condiciones medicas:</label>
+                            <input type="text" name="" id="input_condicion">
+                            <label for="input_condicion">Condiciones medicas:<?php  echo $_POST['condiciones'] ?></label>
                         </div>
                     </div>
 
                     <div class="col s3">
                         <div class="input-field">
-                            <input type="text" name="edad" id="input_edad">
-                            <label for="input_edad">Edad:</label>
+                            <input type="text" name="" id="input_edad">
+                            <label for="input_edad">Edad: <?php  echo $_POST['edad'] ?></label>
                         </div>
 
                     </div>
                     <div class="col s3">
                         <div class="input-field">
-                            <input type="text" name="temp" id="input_temp">
-                            <label for="input_temp">Temperatura:</label>
+                            <input type="text" name="" id="input_temp">
+                            <label for="input_temp">Temperatura: <?php  echo $_POST['temp'] ?></label>
                         </div>
                     </div>
 
@@ -64,14 +63,14 @@
                 <div class="row">
                     <div class="col s4">
                         <div class="input-field">
-                            <input type="text" name="med1" id="input_medicamento01">
-                            <label for="input_medicamento01">Medicamento:</label>
+                            <input type="text" name="" id="input_medicamento01">
+                            <label for="input_medicamento01">Medicamento: <?php  echo $_POST['med1'] ?></label>
                         </div>
                     </div>
                     <div class="col s8">
                         <div class="input-field">
-                            <input type="text" name="ind1" id="input_indicacion01">
-                            <label for="input_indicacion01">Indicaciones:</label>
+                            <input type="text" name="" id="input_indicacion01">
+                            <label for="input_indicacion01">Indicaciones: <?php  echo $_POST['ind1'] ?></label>
                         </div>
                     </div>
 
@@ -79,24 +78,19 @@
                 <div class="row">
                     <div class="col s4">
                         <div class="input-field">
-                            <input type="text" name="med2" id="input_medicamento02">
-                            <label for="input_medicamento02">Medicamento:</label>
+                            <input type="text" name="" id="input_medicamento02">
+                            <label for="input_medicamento02">Medicamento: <?php  echo $_POST['med2'] ?></label>
                         </div>
                     </div>
                     <div class="col s8">
                         <div class="input-field">
-                            <input type="text" name="ind2" id="input_indicacion02">
-                            <label for="input_indicacion02">Indicaciones:</label>
+                            <input type="text" name="" id="input_indicacion02">
+                            <label for="input_indicacion02">Indicaciones: <?php  echo $_POST['ind2'] ?></label>
                         </div>
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                         <button class="btn waves-effect waves-light center" type="submit">Registrar receta</button>
-                    </div>
 
-                </div>
 
             </form>
         </div>
