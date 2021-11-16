@@ -1,99 +1,163 @@
 <!--Estilos CSS-->
+<style>
+#caja1{
+    position: absolute;
+    float: left;
+    width: 450px;
+    height: 190px;
+    top: 50px;
+}
+#caja2{
+    position: absolute;
+    left: 470px;
+    width: 350px;
+    height: 190px;
+    top: 50px;
+}    
+#fecha{
+    height: 50px;
+}
+#caja3{
+    position: absolute;
+    width: 810px;
+    height: 100px;
+    top: 241px;
+    }
+#condiciones, #edad, #temperatura,#med1, #ind1, #med2, #ind2{
+    display: inline;
+}    
+#condiciones{   
+    position: absolute;
+    width: 350px;
+    height: 100px;
 
 
-<div class="container">
-    <div class="row z-depth-3 content">
-        <div class="row ">
-            <div class="col s6  ">
-                <h3>Receta medica </h3>
-            </div>
-            <div class="col s6  ">
-                <h4>Consultorio Medico</h4>
-            </div>
-        </div>
-        <div class="row">
-            <form class="row">
+}    
+#edad{
+    position: absolute;
+    left: 455px;
+    width:175px;
+    height: 100px;
 
-                <div class="row">
-                    <div class="col s6">
-                        <span>Dr. </span>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dicta iste.
-                            eligendi sed. Beatae, sapiente ratione?</p>
-                        <span>Cedula Professional: ####################</span>
-                    </div>
+}
+#temperatura{
+    position: absolute;
+    left: 615px;
+    width:175px;
+    height: 100px;
 
-                    <div class="col s6">
-                        <label for="date">Fecha de expedición: <?php  echo $_POST['fecha'] ?></label>
-                        <input type="date" name= id="date">
-                    </div>
-                    <div class="col s6">
-                        <div class="input-field">
-                            <input type="text" name="" id="input_name" class="validate">
-                            <label for="input_name">Nombre del paciente:  <?php  echo $_POST['paciente'] ?> </label>
-                        </div>
-                    </div>
-                </div>
+}
+#caja4{
+    position: absolute;
+    width: 810px;
+    height: 70px;
+    top: 340px;
+    }
+#med1{
+    position: absolute;
+    width: 300px;
+    height: 70px;
+}  
+#ind1{
+    position: absolute;
+    width: 500px;
+    height: 70px;
+    left: 310px;
+}
+#caja5{
+    position: absolute;
+    width: 810px;
+    height: 70px;
+    top: 413px;
+    }
+#med2{
+    position: absolute;
+    width: 300px;
+    height: 70px;
+}
+#ind2{
+    position: absolute;
+    width: 500px;
+    height: 70px;
+    left: 310px;
+}
+#caja3, #caja4, #caja5{
+    border-style: solid;
+    border-width: 1px;
+    width: 750px;
+}
+</style>
 
-                <div class="row">
+<div id="caja1">
+    <h3>Receta medica </h3>
+    <div id="datosDoctor">
+        <span>Dr. </span>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dicta iste.
+            eligendi sed. Beatae, sapiente ratione?</p>
+        <span>Cedula Professional: ####################</span>
+    </div>
+</div>
+<div id="caja2">
+    <h4>Consultorio Medico</h4>
+    <div id="fechaynombre">            
+        <div id="fecha">
+            <label>Fecha de expedición: <?php  echo $_POST['fecha'] ?></label>              
+        </div>            
+        <div id="nombre">
+            <label >Nombre del paciente:   </label><br>
+            <p class="info">
+                <?php  echo $_POST['paciente'] ?>
+            </p>
 
-
-                    <div class="col s6">
-                        <div class="input-field">
-                            <input type="text" name="" id="input_condicion">
-                            <label for="input_condicion">Condiciones medicas:<?php  echo $_POST['condiciones'] ?></label>
-                        </div>
-                    </div>
-
-                    <div class="col s3">
-                        <div class="input-field">
-                            <input type="text" name="" id="input_edad">
-                            <label for="input_edad">Edad: <?php  echo $_POST['edad'] ?></label>
-                        </div>
-
-                    </div>
-                    <div class="col s3">
-                        <div class="input-field">
-                            <input type="text" name="" id="input_temp">
-                            <label for="input_temp">Temperatura: <?php  echo $_POST['temp'] ?></label>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col s4">
-                        <div class="input-field">
-                            <input type="text" name="" id="input_medicamento01">
-                            <label for="input_medicamento01">Medicamento: <?php  echo $_POST['med1'] ?></label>
-                        </div>
-                    </div>
-                    <div class="col s8">
-                        <div class="input-field">
-                            <input type="text" name="" id="input_indicacion01">
-                            <label for="input_indicacion01">Indicaciones: <?php  echo $_POST['ind1'] ?></label>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col s4">
-                        <div class="input-field">
-                            <input type="text" name="" id="input_medicamento02">
-                            <label for="input_medicamento02">Medicamento: <?php  echo $_POST['med2'] ?></label>
-                        </div>
-                    </div>
-                    <div class="col s8">
-                        <div class="input-field">
-                            <input type="text" name="" id="input_indicacion02">
-                            <label for="input_indicacion02">Indicaciones: <?php  echo $_POST['ind2'] ?></label>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </form>
-        </div>
-
+        </div>                
+    </div>
+</div>       
+<div id="caja3">   
+    <div id="condiciones">
+        <label >Condiciones medicas:</label><br>
+        <p class="info">
+             <?php  echo $_POST['condiciones'] ?>
+        </p>
+    </div>
+    
+    <div id="edad">
+        <label>Edad:</label><br>
+        <p class="info">
+            <?php  echo $_POST['edad'] ?>
+        </p>
+    </div>
+    <div id="temperatura">
+        <label>Temperatura: </label><br>
+        <p class="info">
+            <?php  echo $_POST['temp'] ?>
+        </p>
+    </div>
+</div>
+<div id="caja4">
+    <div id="med1">
+        <label>Medicamento: </label><br>
+        <p class="info">
+            <?php  echo $_POST['med1'] ?>
+        </p>
+    </div>
+    <div id="ind1">
+        <label>Indicaciones: </label><br>
+        <p class="info">
+            <?php  echo $_POST['ind1'] ?>
+        </p>
+    </div>
+</div>
+<div id="caja5">
+    <div id="med2">
+        <label>Medicamento: </label><br>
+        <p class="info">
+            <?php  echo $_POST['med2'] ?>
+        </p>
+    </div>
+    <div id="ind2">
+        <label>Indicaciones: </label><br>
+        <p class="info">
+            <?php  echo $_POST['ind2'] ?>
+        </p>
     </div>
 </div>
