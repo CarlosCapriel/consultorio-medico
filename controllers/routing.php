@@ -39,6 +39,9 @@ switch ($var_getMenu) {
     case "receta":
         require_once('./public/FormRecetas.php');
         break;
+    case "recetaMedica":
+        require_once('./public/formulariorecetaP2.php');
+        break;
     default:
         require_once('./public/home.php');
 }
