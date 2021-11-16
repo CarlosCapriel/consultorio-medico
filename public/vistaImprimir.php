@@ -19,7 +19,7 @@
                         <span>Dr. </span>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dicta iste.
                             eligendi sed. Beatae, sapiente ratione?</p>
-                        <span>Cedula Professional: 0000gskj4543j53</span>
+                        <span>Cedula Professional: ####################</span>
                     </div>
 
                     <div class="col s6">
