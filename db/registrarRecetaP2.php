@@ -17,8 +17,7 @@ $medicamentoDos = $_POST['medicamento02'];
 $indicacionesDos = $_POST['indicaciones02'];
 
 include "../public/envioPdf.php";
-header('location: ../index.php?menu=pdf');
-/*
+
 $conexion = new Conexion;
 $consulta = "INSERT INTO receta_medica(id_receta,id_cita,id_paciente,id_medico,id_condiciones,edad,temperatura) 
 VALUES (NULL,'$idCita','$idPaciente','$idMedico',$idCondiciones,'$edad','$temperatura')";
@@ -31,12 +30,14 @@ if($sql=1){
         $sqlMed = $conexion->nonQuery($consultaMedicinas);
         if($sqlMed=1){
             echo "se creo con exito la receta";
-            header('location: ../index.php?menu=medico');
+            //desmarcar este codigo cuando ya se compruebe que los datos de la receta se graban en la base de datos
+            /*         
+            header('location: ../index.php?menu=pdf');  */
         }else{
             echo "no se pudo crear la receta";
         }
 }else{
     echo "Ocurrio un error al insertar los datos";
 }
-*/
+
 ?>
