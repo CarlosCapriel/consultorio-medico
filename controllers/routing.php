@@ -42,6 +42,9 @@ switch ($var_getMenu) {
     case "recetaMedica":
         require_once('./public/formulariorecetaP2.php');
         break;
+    case "pdf":
+        require_once('./public/envioPdf.php');
+        break;        
     default:
         require_once('./public/home.php');
 }
