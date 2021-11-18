@@ -9,8 +9,6 @@ $edad = $_COOKIE['fecha_nacimiento'];
 $idcondiciones = $_COOKIE['id_condiciones'];
 $condiciones = $_COOKIE['condiciones_medicas'];
 
-
-
 ?>
 
 <!--Estilos CSS-->
