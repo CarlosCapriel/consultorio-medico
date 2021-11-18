@@ -94,19 +94,19 @@
         <span>Dr. </span>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dicta iste.
             eligendi sed. Beatae, sapiente ratione?</p>
-        <span>Cedula Professional: ####################</span>
+        <span>Cedula Professional: HSD45J4J4545000</span>
     </div>
 </div>
 <div id="caja2">
     <h4>Consultorio Medico</h4>
     <div id="fechaynombre">            
         <div id="fecha">
-            <label>Fecha de expedición: <?php  echo $_POST['fecha'] ?></label>              
+            <label>Fecha de expedición: <?php  echo $fecha ?></label>              
         </div>            
         <div id="nombre">
             <label >Nombre del paciente:   </label><br>
             <p class="info">
-                <?php  echo $_POST['paciente'] ?>
+                <?php  echo $_POST['nombre'] ?>
             </p>
 
         </div>                
@@ -116,7 +116,7 @@
     <div id="condiciones">
         <label >Condiciones medicas:</label><br>
         <p class="info">
-             <?php  echo $_POST['condiciones'] ?>
+             <?php  echo  $_POST['condiciones']?>
         </p>
     </div>
     
@@ -129,7 +129,7 @@
     <div id="temperatura">
         <label>Temperatura: </label><br>
         <p class="info">
-            <?php  echo $_POST['temp'] ?>
+            <?php  echo $_POST['temperatura']?>
         </p>
     </div>
 </div>
@@ -137,13 +137,13 @@
     <div id="med1">
         <label>Medicamento: </label><br>
         <p class="info">
-            <?php  echo $_POST['med1'] ?>
+            <?php  echo $_POST['medicamento01'] ?>
         </p>
     </div>
     <div id="ind1">
         <label>Indicaciones: </label><br>
         <p class="info">
-            <?php  echo $_POST['ind1'] ?>
+            <?php  echo $_POST['indicaciones01']?>
         </p>
     </div>
 </div>
@@ -151,13 +151,13 @@
     <div id="med2">
         <label>Medicamento: </label><br>
         <p class="info">
-            <?php  echo $_POST['med2'] ?>
+            <?php  echo $_POST['medicamento02']?>
         </p>
     </div>
     <div id="ind2">
         <label>Indicaciones: </label><br>
         <p class="info">
-            <?php  echo $_POST['ind2'] ?>
+            <?php  echo $_POST['indicaciones02']?>
         </p>
     </div>
 </div>

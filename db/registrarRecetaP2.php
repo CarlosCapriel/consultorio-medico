@@ -16,6 +16,9 @@ $indicacionesUno = $_POST['indicaciones01'];
 $medicamentoDos = $_POST['medicamento02'];
 $indicacionesDos = $_POST['indicaciones02'];
 
+include "../public/envioPdf.php";
+header('location: ../index.php?menu=pdf');
+/*
 $conexion = new Conexion;
 $consulta = "INSERT INTO receta_medica(id_receta,id_cita,id_paciente,id_medico,id_condiciones,edad,temperatura) 
 VALUES (NULL,'$idCita','$idPaciente','$idMedico',$idCondiciones,'$edad','$temperatura')";
@@ -35,5 +38,5 @@ if($sql=1){
 }else{
     echo "Ocurrio un error al insertar los datos";
 }
-
+*/
 ?>
