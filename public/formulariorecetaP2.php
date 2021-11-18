@@ -9,7 +9,6 @@ $edad = $_COOKIE['fecha_nacimiento'];
 $idcondiciones = $_COOKIE['id_condiciones'];
 $condiciones = $_COOKIE['condiciones_medicas'];
 
-
 //envio de pdf
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     /**/
@@ -62,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     }
 //----------------------------------------
+
 ?>
 
 <!--Estilos CSS-->
