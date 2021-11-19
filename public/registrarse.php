@@ -25,17 +25,17 @@
 
             <div class="input-field col s12">
 
-                <input id="icon_prefix" type="text" name="nombre" onkeypress="return soloLetras(event)" class="validate" required>
+                <input id="icon_prefix" type="text" name="nombre" onkeypress="return soloLetras(event)" class="validate" style="text-transform: capitalize;" required>
                 <label for="icon_prefix">Nombre(s)</label>
             </div>
             <div class="input-field col s6">
 
-                <input id="icon_paterno" type="text" name="apellidoPaterno" onkeypress="return soloLetras(event)" class="validate" required>
+                <input id="icon_paterno" type="text" name="apellidoPaterno" onkeypress="return soloLetras(event)" class="validate" style="text-transform: capitalize;" required>
                 <label for="icon_paterno">Apellido paterno</label>
             </div>
             <div class="input-field col s6">
 
-                <input id="icon_materno" type="text" name="apellidoMaterno" onkeypress="return soloLetras(event)" class="validate" required>
+                <input id="icon_materno" type="text" name="apellidoMaterno" onkeypress="return soloLetras(event)" class="validate" style="text-transform: capitalize;" required>
                 <label for="icon_materno">Apellido materno</label>
             </div>
             <div class="input-field col s6">
