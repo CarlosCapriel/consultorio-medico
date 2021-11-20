@@ -3,6 +3,8 @@ $cadena = $_SESSION['id_paciente'];
 
 ?>
 <link href="public/css/style_agendar.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="public/css/wow-alert.css">
+	<link rel="stylesheet" type="text/css" href="public/css/example.css">
 <div class="container">
     <div class="row z-depth-3 content">
         <div class="row">
@@ -35,7 +37,7 @@ $cadena = $_SESSION['id_paciente'];
 
                 <div class="row center">
                     <br>
-                    <button class="btn" type="submit" name="action">Enviar
+                    <button onclick="wow_default_alert()" class="btn" type="submit" name="action">Enviar
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
@@ -47,6 +49,8 @@ $cadena = $_SESSION['id_paciente'];
 <script src="public/js/paciente_select.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="public/js/agendar.js"></script>
-
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script type="text/javascript" src="public/js/wow-alert.js"></script>
+<script type="text/javascript" src="public/js/example.js"></script>
 
 

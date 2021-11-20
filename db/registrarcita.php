@@ -11,7 +11,7 @@ $sql=$conexion->nonQuery($consulta);
 if ($sql=1) {
     $consultaCon ="INSERT INTO condiciones_medicas(id_condiciones, id_paciente,descripcion) VALUES (null,'$id_paciente','$condiciones')";
     $resultado = $conexion->ingresarDatos($consultaCon);
-    echo '<script>alert("Cita creada con exito");window.location.href="../index.php?menu=paciente"</script>';
+    echo '<script>window.location.href="../index.php?menu=historialCitas"</script>';
 } else {
     echo '<script>alert("Error al intentar crear la cita");window.location.href="../index.php?menu=paciente"</script>';
 }
