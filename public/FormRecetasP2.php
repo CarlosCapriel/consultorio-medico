@@ -16,9 +16,6 @@ $condiciones = $_COOKIE['condiciones_medicas'];
 <!--Estilos CSS-->
 <link href="public/css/style_receta.css" rel="stylesheet" />
 
-
-
-
 <div class="container">
     <div class="row z-depth-3 content">
         <div class="row ">

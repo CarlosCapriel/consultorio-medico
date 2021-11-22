@@ -1,6 +1,6 @@
 <!--Estilos CSS-->
 <link href="public/css/style_registro.css" rel="stylesheet" />
-<script src="public/js/validacion_registro.js"></script>
+
 
 <!-- contenido -->
 <div class="container">
@@ -85,6 +85,8 @@
         </div>
     </form>
 </div>
+<!-- Scripts de JS -->
+<script src="public/js/validacion_registro.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
