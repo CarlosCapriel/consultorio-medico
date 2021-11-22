@@ -16,14 +16,17 @@ $contrasenia=$_POST['contrasenia'];
             $_SESSION['loggedUserName'] = $sql[0]['correo'] ;
             $_SESSION['id_rol'] = $sql[0]['id_rol'];
             if ($sql[0]['id_rol']==1) {
-                header("location:../index.php?menu=medico");
+                $consultaid ="SELECT * FROM medicos where correo='$email'";
+                $sqlid = $conexion->obtenerDatos($consultaid);
+                $_SESSION['id_medico']=$sqlid[0]['id_medico'];
+                $_SESSION['nombre']=$sqlid[0]['nombre'];
+                echo '<script>alert("Inicio de sesion exitoso");window.location.href="../index.php?menu=medico"</script>';
             } elseif ($sql[0]['id_rol']==2) {
                 $consultaid = "SELECT * FROM pacientes where correo='$email'";
                 $sqlid = $conexion->obtenerDatos($consultaid);
                 $_SESSION['id_paciente'] = $sqlid[0]['id_paciente'];
                 $_SESSION['nombre'] = $sqlid[0]['nombre'];
                 echo '<script>alert("Inicio de sesion exitoso");window.location.href="../index.php?menu=paciente"</script>';
-                return ;
             }
         } else {
             echo '<script>

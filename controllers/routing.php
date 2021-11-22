@@ -40,7 +40,7 @@ switch ($var_getMenu) {
         require_once('./public/FormRecetas.php');
         break;
     case "recetaMedica":
-        require_once('./public/formulariorecetaP2.php');
+        require_once('./public/FormRecetasP2.php');
         break;
     case "pdf":
         require_once('./public/envioPdf.php');
