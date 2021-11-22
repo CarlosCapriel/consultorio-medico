@@ -7,7 +7,7 @@ $cadena = $_SESSION['id_paciente'];
 
 <!-- Contenido -->
 <div class="container">
-    <div class="row z-depth-3 content">
+    <div class="row z-depth-3 content" style="padding: 1em 2rem 1rem;">
         <div class="row">
             <div class="col s12">
 
