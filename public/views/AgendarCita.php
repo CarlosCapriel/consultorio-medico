@@ -37,7 +37,7 @@ $cadena = $_SESSION['id_paciente'];
 
                 <div class="row center">
                     <br>
-                    <button onclick="wow_default_alert()" class="btn" type="submit" name="action">Enviar
+                    <button  class="btn" type="submit" name="action">Enviar
                         <i class="material-icons right">send</i>
                     </button>
                 </div>

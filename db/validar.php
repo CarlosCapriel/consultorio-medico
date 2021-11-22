@@ -22,19 +22,7 @@ $contrasenia=$_POST['contrasenia'];
                 $sqlid = $conexion->obtenerDatos($consultaid);
                 $_SESSION['id_paciente'] = $sqlid[0]['id_paciente'];
                 $_SESSION['nombre'] = $sqlid[0]['nombre'];
-                echo '<script>
-                Swal.fire({
-                 icon: "success",
-                 title: "Excelente",
-                 text: "¡Sesión iniciada con éxito!",
-                 showConfirmButton: true,
-                 confirmButtonText: "Cerrar"
-                 }).then(function(result){
-                    if(result.value){                   
-                     window.location = "../index.php?menu=paciente";
-                    }
-                 });
-                </script>';
+                echo '<script>alert("Inicio de sesion exitoso");window.location.href="../index.php?menu=paciente"</script>';
                 return ;
             }
         } else {
