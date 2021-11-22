@@ -26,7 +26,6 @@ $consulta ="SELECT * from pacientes where correo= '$correo'";
         setcookie('correo',$sql[0]['correo'],time()+604800,'/');
         setcookie('idPaciente',$sql[0]['id_paciente'],time()+604800,'/');
         setcookie('idCita',$sqlCita[0]['id_cita'],time()+604800,'/');
-        //setcookie('idMedico'.'',time()+604800,'/');
         setcookie('nombrePaciente', $sql[0]['nombre'],time()+604800,'/');
         setcookie('apellido_p',$sql[0]['apellido_p'],time()+604800, '/');
         setcookie('apellido_m', $sql[0]['apellido_m'],time()+604800, '/');

@@ -1,4 +1,6 @@
 <?php 
+$nombre = $_SESSION['nombre'];
+$idMedico =$_SESSION['id_medico'];
 $correo = $_COOKIE['correo'];
 $idPaciente = $_COOKIE['idPaciente'];
 $idCita = $_COOKIE['idCita'];
@@ -32,16 +34,17 @@ $condiciones = $_COOKIE['condiciones_medicas'];
                 
                 <div class="row">
                     <div class="col s6">
-                        <span>Dr. </span>
+                        <span>Dr. <?php echo $nombre?> </span>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dicta iste.
                             eligendi sed. Beatae, sapiente ratione?</p>
                         <span>Cedula Professional:</span>
                     </div>
-                    <input type="hidden" id="id" name="id_cita" value="<?php echo $idCita?>">
-                    <input type="hidden" id="id" name="id_paciente" value="<?php echo $idPaciente?>">
-                    <input type="hidden" id="id" name="id_medico" value="1">
-                    <input type="hidden" id="id" name="id_condiciones" value="<?php echo $idcondiciones?>">
-                    <input type="hidden" id="id" name="correo" value="<?php echo $correo?>">
+                    
+                    <input type="hidden" id="id_cita" name="id_cita" value="<?php echo $idCita?>">
+                    <input type="hidden" id="id_paciente" name="id_paciente" value="<?php echo $idPaciente?>">
+                    <input type="hidden" id="id_medico" name="id_medico" value="<?php echo $idMedico?>">
+                    <input type="hidden" id="id_condiciones" name="id_condiciones" value="<?php echo $idcondiciones?>">
+                    <input type="hidden" id="id_correo" name="correo" value="<?php echo $correo?>">
                     <div class="col s6">
                         <label for="date">Fecha de expedición</label>
                         <input type="date" name="fecha" value="<?php echo date('Y-m-d')?>" id="date">

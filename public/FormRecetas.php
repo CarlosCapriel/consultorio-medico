@@ -1,5 +1,6 @@
 <?php
-
+    $nombre = $_SESSION['nombre']; 
+    $idMedico = $_SESSION['id_medico']
 ?>
 
 
@@ -21,7 +22,7 @@
 
                 <div class="row">
                     <div class="col s6">
-                        <span>Dr. </span>
+                        <span>Dr. <?php echo $nombre?></span>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dicta iste.
                             eligendi sed. Beatae, sapiente ratione?</p>
                         <span>Cedula Professional:</span>
