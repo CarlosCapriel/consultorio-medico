@@ -1,6 +1,7 @@
 <!-- Estilos en CSS -->
 <link rel="stylesheet" href="public/css/style_nav.css">
 
+<!-- Contenido -->
 <?php
     $estado_session = session_status();
     if ($estado_session == PHP_SESSION_NONE) {
@@ -72,6 +73,7 @@
     <?php
     } ?>
 
+<!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     // Or with jQuery
