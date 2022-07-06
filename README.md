@@ -10,8 +10,8 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 [Sitio Web](https://consultoriosmedicos.herokuapp.com)
 
 ## Construido con :hammer:
-* [PHP](https://www.php.net/manual/es/index.php) - Para el desarrollo web y bakend 
-* [Materialize](https://materializecss.com/getting-started.html) - El framework web usado
+* [PHP](https://www.php.net/manual/es/index.php) - Para el desarrollo web y backend 
+* [Materialize](https://materializecss.com/getting-started.html) - El framework de css usado
 
 ## Autores :black_nib:
 _Los que levantaron el proyecto desde sus inicios_
